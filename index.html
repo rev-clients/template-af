@@ -647,7 +647,7 @@
                         <!-- end Idiomass Squares Selection -->
 
                         <!-- init inputs collection -->
-                        <div class="col-6 form-row">
+                        <div class="form-group form-row">
                           <div class="col-12">
                             <label for="fldrecsitekey" class="col-form-label"
                               >Clave Pública RC</label
@@ -698,6 +698,18 @@
                           </div>
                         </div>
                         <!-- end inputs collection -->
+
+                        <!-- init inforamtion section -->
+                        <div class="form-group form-row">
+                          <input
+                            type="hidden"
+                            name="rid"
+                            id="rid"
+                            value="0"
+                          /><br /><br />
+                          (<code>*</code>) Campos necesarios
+                        </div>
+                        <!-- end inforamtion section -->
                       </div>
                       <!-- end Column Left -->
 
@@ -851,7 +863,7 @@
                         <!-- end inputs collection -->
 
                         <!-- init Servicios Squares Selection -->
-                        <div class="col-6 form-row">
+                        <div class="form-group form-row">
                           <label for="mslservicio" class="col-form-label"
                             >Servicio (<code>*</code>)</label
                           >
@@ -876,18 +888,9 @@
                           </div>
                         </div>
                         <!-- end Servicios Squares Selection -->
-                      </div>
-                      <!-- end Column Right -->
 
-                      <div class="form-group form-row">
-                        <div class="col-12">
-                          <input
-                            type="hidden"
-                            name="rid"
-                            id="rid"
-                            value="0"
-                          /><br /><br />
-                          (<code>*</code>) Campos necesarios
+                        <!-- init buttons section -->
+                        <div class="form-group form-row">
                           <button
                             type="submit"
                             name="accnbtn"
@@ -921,8 +924,9 @@
                             </button>
                           </a>
                         </div>
+                        <!-- end buttons section -->
                       </div>
-                      <!-- end inputs collection -->
+                      <!-- end Column Right -->
                     </form>
                     <!-- end Content form template -->
                   </div>
