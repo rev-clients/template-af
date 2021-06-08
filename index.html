@@ -603,6 +603,25 @@
                           </div>
                         </div>
                         <!-- init Base Field Text  -->
+                        <!-- init Admin fijo Tooltip selection -->
+                        <div class="form-group form-row flex-column">
+                          <label><br />Admin fijo (<code>*</code>)</label>
+                          <div class="custom-control custom-switch">
+                            <input
+                              type="checkbox"
+                              class="custom-control-input"
+                              name="chbfixedadm"
+                              id="chbfixedadm"
+                              value="1"
+                            />
+                            <label
+                              for="chbfixedadm"
+                              class="custom-control-label"
+                              >Admin fijo</label
+                            >
+                          </div>
+                        </div>
+                        <!-- end Admin fijo Tooltip selection -->
                       </div>
                       <!-- end Column Left -->
 
@@ -667,28 +686,8 @@
                           </div>
                         </div>
                         <!-- end Username Text Input -->
-                      </div>
-                      <!-- end Column Right -->
-
-                      <div class="form-group form-row">
-                        <div class="col-12 col-md-6">
-                          <label><br />Admin fijo (<code>*</code>)</label>
-                          <div class="custom-control custom-switch">
-                            <input
-                              type="checkbox"
-                              class="custom-control-input"
-                              name="chbfixedadm"
-                              id="chbfixedadm"
-                              value="1"
-                            />
-                            <label
-                              for="chbfixedadm"
-                              class="custom-control-label"
-                              >Admin fijo</label
-                            >
-                          </div>
-                        </div>
-                        <div class="col-12 col-md-6">
+                        <!-- init Email Field Text -->
+                        <div class="form-group form-row">
                           <label for="fldmailadm" class="col-form-label"
                             >Email Adm (<code>*</code>)</label
                           >
@@ -706,7 +705,10 @@
                             Algo falta o está incorrecto en Email Adm.
                           </div>
                         </div>
+                        <!-- end Email Field Text -->
                       </div>
+                      <!-- end Column Right -->
+
                       <div class="form-group form-row">
                         <div class="col-12 col-md-6">
                           <label for="mslidiomas" class="col-form-label"
