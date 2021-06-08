@@ -645,6 +645,59 @@
                           </select>
                         </div>
                         <!-- end Idiomass Squares Selection -->
+
+                        <!-- init inputs collection -->
+                        <div class="col-6 form-row">
+                          <div class="col-12">
+                            <label for="fldrecsitekey" class="col-form-label"
+                              >Clave Pública RC</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control stymax"
+                              maxlength="50"
+                              name="fldrecsitekey"
+                              id="fldrecsitekey"
+                              value=""
+                            />
+                          </div>
+                          <div class="col-12 form-row">
+                            <div class="col-12">
+                              <label for="fldrecsecret" class="col-form-label"
+                                >Clave Secreta RC</label
+                              >
+                              <input
+                                type="text"
+                                class="form-control stymax"
+                                maxlength="50"
+                                name="fldrecsecret"
+                                id="fldrecsecret"
+                                value=""
+                              />
+                            </div>
+                          </div>
+                          <div class="col-12 form-row">
+                            <div class="col-12">
+                              <label><br />Estado (<code>*</code>)</label>
+                              <div class="custom-control custom-switch">
+                                <input
+                                  type="checkbox"
+                                  class="custom-control-input"
+                                  name="chbestatus"
+                                  id="chbestatus"
+                                  checked="checked"
+                                  value="1"
+                                />
+                                <label
+                                  for="chbestatus"
+                                  class="custom-control-label"
+                                  >Activo</label
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- end inputs collection -->
                       </div>
                       <!-- end Column Left -->
 
@@ -796,60 +849,8 @@
                           </div>
                         </div>
                         <!-- end inputs collection -->
-                      </div>
-                      <!-- end Column Right -->
 
-                      <div class="form-group form-row">
-                        <div class="col-6 form-row">
-                          <div class="col-12">
-                            <label for="fldrecsitekey" class="col-form-label"
-                              >Clave Pública RC</label
-                            >
-                            <input
-                              type="text"
-                              class="form-control stymax"
-                              maxlength="50"
-                              name="fldrecsitekey"
-                              id="fldrecsitekey"
-                              value=""
-                            />
-                          </div>
-                          <div class="col-12 form-row">
-                            <div class="col-12">
-                              <label for="fldrecsecret" class="col-form-label"
-                                >Clave Secreta RC</label
-                              >
-                              <input
-                                type="text"
-                                class="form-control stymax"
-                                maxlength="50"
-                                name="fldrecsecret"
-                                id="fldrecsecret"
-                                value=""
-                              />
-                            </div>
-                          </div>
-                          <div class="col-12 form-row">
-                            <div class="col-12">
-                              <label><br />Estado (<code>*</code>)</label>
-                              <div class="custom-control custom-switch">
-                                <input
-                                  type="checkbox"
-                                  class="custom-control-input"
-                                  name="chbestatus"
-                                  id="chbestatus"
-                                  checked="checked"
-                                  value="1"
-                                />
-                                <label
-                                  for="chbestatus"
-                                  class="custom-control-label"
-                                  >Activo</label
-                                >
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+                        <!-- init Servicios Squares Selection -->
                         <div class="col-6 form-row">
                           <label for="mslservicio" class="col-form-label"
                             >Servicio (<code>*</code>)</label
@@ -874,7 +875,10 @@
                             Algo falta o está incorrecto en Servicio.
                           </div>
                         </div>
+                        <!-- end Servicios Squares Selection -->
                       </div>
+                      <!-- end Column Right -->
+
                       <div class="form-group form-row">
                         <div class="col-12">
                           <input
