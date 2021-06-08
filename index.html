@@ -526,10 +526,12 @@
                 </div>
               </div>
             </div>
+            <!-- init Form content -->
             <div class="row">
               <div class="col-12">
                 <div class="card">
                   <div class="card-body">
+                    <!-- init Content form template -->
                     <form
                       name="frmratc"
                       id="frmratc"
@@ -540,11 +542,11 @@
                     >
                       <div class="form-group form-row">
                         <div class="col-12 col-md-6">
-                          <label for="dspcliente" class="col-form-label col-12"
+                          <label for="dspcliente" class="form-label d-block"
                             >Cliente</label
                           >
                           <select
-                            class="selectpicker col-9"
+                            class="selectpicker"
                             data-live-search="true"
                             data-style="btn-light"
                             name="dspcliente"
@@ -558,6 +560,9 @@
                             <option value="4">Alexis</option>
                           </select>
                         </div>
+                      </div>
+
+                      <div class="form-group form-row">
                         <div class="col-12 col-md-6">
                           <label for="fldhost" class="col-form-label"
                             >Ip Especial</label
@@ -889,20 +894,14 @@
                         </div>
                       </div>
                     </form>
+                    <!-- end Content form template -->
                   </div>
                 </div>
               </div>
             </div>
+            <!-- end Form content -->
           </div>
         </div>
-        <form action="" method="post" name="extfrm" id="extfrm">
-          <input name="extval" id="extval" type="hidden" value="" /><input
-            name="extcomp"
-            id="extcomp"
-            type="hidden"
-            value=""
-          />
-        </form>
 
         <footer class="footer">
           <div class="container-fluid">
