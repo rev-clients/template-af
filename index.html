@@ -542,7 +542,7 @@
                     >
                       <!-- init Column Left -->
                       <div class="col-12 col-md-6">
-                        <!-- init Select -->
+                        <!-- init Cliente Select -->
                         <div class="form-group form-row">
                           <label for="dspcliente" class="form-label d-block"
                             >Cliente</label
@@ -562,35 +562,9 @@
                             <option value="4">Alexis</option>
                           </select>
                         </div>
-                        <!-- end Select -->
-                      </div>
-                      <!-- end Column Left -->
-
-                      <!-- init Column Right -->
-                      <div class="col-12 col-md-6">
-                        <!-- Init Text Input -->
+                        <!-- end Cliente Select -->
+                        <!-- init URL Field Text  -->
                         <div class="form-group form-row">
-                          <label for="fldhost" class="col-form-label"
-                            >Ip Especial</label
-                          >
-                          <input
-                            type="text"
-                            class="form-control stymax"
-                            maxlength="20"
-                            name="fldhost"
-                            id="fldhost"
-                            value=""
-                          />
-                        </div>
-                        <!-- end Text Input -->
-                      </div>
-                      <!-- end Column Right -->
-
-                      <!-- init Select -->
-
-                      <!-- init Select -->
-                      <div class="form-group form-row">
-                        <div class="col-12 col-md-6">
                           <label for="fldsite" class="col-form-label"
                             >URL (<code>*</code>)</label
                           >
@@ -608,31 +582,9 @@
                             Algo falta o está incorrecto en URL.
                           </div>
                         </div>
-                        <div class="col-12 col-md-6">
-                          <label for="dspseguri" class="col-form-label col-12"
-                            >Seguridad (<code>*</code>)</label
-                          >
-                          <select
-                            class="selectpicker col-9"
-                            data-live-search="true"
-                            data-style="btn-light"
-                            required
-                            name="dspseguri"
-                            id="dspseguri"
-                          >
-                            <option value="">Seleccione..</option>
-                            <option value="0">BajaMedia</option>
-                            <option value="1">Alta</option>
-                            <option value="2">Estricta</option>
-                          </select>
-                          <div class="valid-feedback">Se ve bien!.</div>
-                          <div class="invalid-feedback">
-                            Algo falta o está incorrecto en Seguridad.
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-group form-row">
-                        <div class="col-12 col-md-6">
+                        <!-- init URL Field Text  -->
+                        <!-- init Base Field Text  -->
+                        <div class="form-group form-row">
                           <label for="fldbase" class="col-form-label"
                             >Base (<code>*</code>)</label
                           >
@@ -650,7 +602,53 @@
                             Algo falta o está incorrecto en Base.
                           </div>
                         </div>
-                        <div class="col-12 col-md-6">
+                        <!-- init Base Field Text  -->
+                      </div>
+                      <!-- end Column Left -->
+
+                      <!-- init Column Right -->
+                      <div class="col-12 col-md-6">
+                        <!-- Init Ip Special Text Input -->
+                        <div class="form-group form-row">
+                          <label for="fldhost" class="col-form-label"
+                            >Ip Especial</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control stymax"
+                            maxlength="20"
+                            name="fldhost"
+                            id="fldhost"
+                            value=""
+                          />
+                        </div>
+                        <!-- end Ip Special Text Input -->
+                        <!-- init Seguridad Select  -->
+                        <div class="form-group form-row">
+                          <label for="dspseguri" class="col-form-label col-12"
+                            >Seguridad (<code>*</code>)</label
+                          >
+                          <select
+                            class="selectpicker"
+                            data-live-search="true"
+                            data-style="btn-light"
+                            required
+                            name="dspseguri"
+                            id="dspseguri"
+                          >
+                            <option value="">Seleccione..</option>
+                            <option value="0">BajaMedia</option>
+                            <option value="1">Alta</option>
+                            <option value="2">Estricta</option>
+                          </select>
+                          <div class="valid-feedback">Se ve bien!.</div>
+                          <div class="invalid-feedback">
+                            Algo falta o está incorrecto en Seguridad.
+                          </div>
+                        </div>
+                        <!-- end Seguridad Select  -->
+                        <!-- init Username Text Input -->
+                        <div class="form-group form-row">
                           <label for="flduser" class="col-form-label"
                             >UserName (<code>*</code>)</label
                           >
@@ -668,7 +666,10 @@
                             Algo falta o está incorrecto en UserName.
                           </div>
                         </div>
+                        <!-- end Username Text Input -->
                       </div>
+                      <!-- end Column Right -->
+
                       <div class="form-group form-row">
                         <div class="col-12 col-md-6">
                           <label><br />Admin fijo (<code>*</code>)</label>
