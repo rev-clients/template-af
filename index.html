@@ -537,14 +537,14 @@
                       id="frmratc"
                       target=""
                       method="post"
-                      class="needs-validation"
+                      class="needs-validation form-row"
                       novalidate
                     >
                       <!-- init Column Left -->
-                      <div class="col-12 col-md-6">
+                      <div class="col-md-6">
                         <!-- init Cliente Select -->
-                        <div class="form-group form-row">
-                          <label for="dspcliente" class="form-label d-block"
+                        <div class="form-group">
+                          <label for="dspcliente" class="col-form-label d-block"
                             >Cliente</label
                           >
                           <select
@@ -565,7 +565,7 @@
                         <!-- end Cliente Select -->
 
                         <!-- init URL Field Text  -->
-                        <div class="form-group form-row">
+                        <div class="form-group">
                           <label for="fldsite" class="col-form-label"
                             >URL (<code>*</code>)</label
                           >
@@ -586,7 +586,7 @@
                         <!-- init URL Field Text  -->
 
                         <!-- init Base Field Text  -->
-                        <div class="form-group form-row">
+                        <div class="form-group">
                           <label for="fldbase" class="col-form-label"
                             >Base (<code>*</code>)</label
                           >
@@ -607,7 +607,7 @@
                         <!-- init Base Field Text  -->
 
                         <!-- init Admin fijo Tooltip selection -->
-                        <div class="form-group form-row flex-column">
+                        <div class="form-group flex-column">
                           <label><br />Admin fijo (<code>*</code>)</label>
                           <div class="custom-control custom-switch">
                             <input
@@ -627,7 +627,7 @@
                         <!-- end Admin fijo Tooltip selection -->
 
                         <!-- init Idiomass Squares Selection -->
-                        <div class="form-group form-row">
+                        <div class="form-group">
                           <label for="mslidiomas" class="col-form-label"
                             >Idiomas</label
                           >
@@ -647,7 +647,7 @@
                         <!-- end Idiomass Squares Selection -->
 
                         <!-- init inputs collection -->
-                        <div class="form-group form-row">
+                        <div class="form-group">
                           <div class="col-12">
                             <label for="fldrecsitekey" class="col-form-label"
                               >Clave Pública RC</label
@@ -661,22 +661,20 @@
                               value=""
                             />
                           </div>
-                          <div class="col-12 form-row">
-                            <div class="col-12">
-                              <label for="fldrecsecret" class="col-form-label"
-                                >Clave Secreta RC</label
-                              >
-                              <input
-                                type="text"
-                                class="form-control stymax"
-                                maxlength="50"
-                                name="fldrecsecret"
-                                id="fldrecsecret"
-                                value=""
-                              />
-                            </div>
+                          <div class="col-12">
+                            <label for="fldrecsecret" class="col-form-label"
+                              >Clave Secreta RC</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control stymax"
+                              maxlength="50"
+                              name="fldrecsecret"
+                              id="fldrecsecret"
+                              value=""
+                            />
                           </div>
-                          <div class="col-12 form-row">
+                          <div class="col-12">
                             <div class="col-12">
                               <label><br />Estado (<code>*</code>)</label>
                               <div class="custom-control custom-switch">
@@ -700,7 +698,7 @@
                         <!-- end inputs collection -->
 
                         <!-- init inforamtion section -->
-                        <div class="form-group form-row">
+                        <div class="form-group">
                           <input
                             type="hidden"
                             name="rid"
@@ -714,9 +712,9 @@
                       <!-- end Column Left -->
 
                       <!-- init Column Right -->
-                      <div class="col-12 col-md-6">
+                      <div class="col-md-6">
                         <!-- Init Ip Special Text Input -->
-                        <div class="form-group form-row">
+                        <div class="form-group">
                           <label for="fldhost" class="col-form-label"
                             >Ip Especial</label
                           >
@@ -732,7 +730,7 @@
                         <!-- end Ip Special Text Input -->
 
                         <!-- init Seguridad Select  -->
-                        <div class="form-group form-row">
+                        <div class="form-group">
                           <label for="dspseguri" class="col-form-label col-12"
                             >Seguridad (<code>*</code>)</label
                           >
@@ -757,7 +755,7 @@
                         <!-- end Seguridad Select  -->
 
                         <!-- init Username Text Input -->
-                        <div class="form-group form-row">
+                        <div class="form-group">
                           <label for="flduser" class="col-form-label"
                             >UserName (<code>*</code>)</label
                           >
@@ -778,7 +776,7 @@
                         <!-- end Username Text Input -->
 
                         <!-- init Email Field Text -->
-                        <div class="form-group form-row">
+                        <div class="form-group">
                           <label for="fldmailadm" class="col-form-label"
                             >Email Adm (<code>*</code>)</label
                           >
@@ -799,71 +797,65 @@
                         <!-- end Email Field Text -->
 
                         <!-- init inputs collection -->
-                        <div class="form-group form-row">
-                          <div class="col-12 form-row">
-                            <div class="col-12">
-                              <label for="fldmaincolor" class="col-form-label"
-                                >1º Color (<code>*</code>)</label
-                              >
-                              <input
-                                type="text"
-                                class="form-control stymax"
-                                maxlength="6"
-                                required
-                                name="fldmaincolor"
-                                id="fldmaincolor"
-                                value=""
-                              />
-                              <div class="valid-feedback">Se ve bien!.</div>
-                              <div class="invalid-feedback">
-                                Algo falta o está incorrecto en 1º Color.
-                              </div>
+                        <div class="form-group">
+                          <div>
+                            <label for="fldmaincolor" class="col-form-label"
+                              >1º Color (<code>*</code>)</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control stymax"
+                              maxlength="6"
+                              required
+                              name="fldmaincolor"
+                              id="fldmaincolor"
+                              value=""
+                            />
+                            <div class="valid-feedback">Se ve bien!.</div>
+                            <div class="invalid-feedback">
+                              Algo falta o está incorrecto en 1º Color.
                             </div>
                           </div>
-                          <div class="col-12 form-row">
-                            <div class="col-12">
-                              <label for="fldseccolor" class="col-form-label"
-                                >2º Color (<code>*</code>)</label
-                              >
-                              <input
-                                type="text"
-                                class="form-control stymax"
-                                maxlength="6"
-                                required
-                                name="fldseccolor"
-                                id="fldseccolor"
-                                value=""
-                              />
-                              <div class="valid-feedback">Se ve bien!.</div>
-                              <div class="invalid-feedback">
-                                Algo falta o está incorrecto en 2º Color.
-                              </div>
+                          <div>
+                            <label for="fldseccolor" class="col-form-label"
+                              >2º Color (<code>*</code>)</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control stymax"
+                              maxlength="6"
+                              required
+                              name="fldseccolor"
+                              id="fldseccolor"
+                              value=""
+                            />
+                            <div class="valid-feedback">Se ve bien!.</div>
+                            <div class="invalid-feedback">
+                              Algo falta o está incorrecto en 2º Color.
                             </div>
                           </div>
-                          <div class="col-12 form-row">
-                            <div class="col-12">
-                              <label><br />Sitio Amplio (<code>*</code>)</label>
-                              <div class="custom-control custom-switch">
-                                <input
-                                  type="checkbox"
-                                  class="custom-control-input"
-                                  name="chbfullsite"
-                                  id="chbfullsite"
-                                  value="1"
-                                />
-                                <label
-                                  for="chbfullsite"
-                                  class="custom-control-label"
-                                  >Sitio Amplio</label
-                                >
-                              </div>
+                          <div>
+                            <label><br />Sitio Amplio (<code>*</code>)</label>
+                            <div class="custom-control custom-switch">
+                              <input
+                                type="checkbox"
+                                class="custom-control-input"
+                                name="chbfullsite"
+                                id="chbfullsite"
+                                value="1"
+                              />
+                              <label
+                                for="chbfullsite"
+                                class="custom-control-label"
+                                >Sitio Amplio</label
+                              >
                             </div>
                           </div>
                         </div>
                         <!-- end inputs collection -->
 
                         <!-- init Servicios Squares Selection -->
-                        <div class="form-group form-row">
+                        <div class="form-group">
                           <label for="mslservicio" class="col-form-label"
                             >Servicio (<code>*</code>)</label
                           >
@@ -890,7 +882,7 @@
                         <!-- end Servicios Squares Selection -->
 
                         <!-- init buttons section -->
-                        <div class="form-group form-row">
+                        <div class="form-group">
                           <button
                             type="submit"
                             name="accnbtn"
