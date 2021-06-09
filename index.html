@@ -10,6 +10,11 @@
       href="https://alfanegocios.com.ar/sandbox2/reindex.php"
       target="_top"
     />
+    <!-- latest version of flatpickr from jsdelivr.  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
     <link rel="shortcut icon" href="images/favicon.png" />
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="css/bootstrap-table.min.css" rel="stylesheet" type="text/css" />
@@ -551,8 +556,7 @@
                     >
                       <!-- init Column Left -->
                       <div class="col-md-6">
-                        <!-- init Datapicket -->
-
+                        <!-- init data picker -->
                         <div class="form-group">
                           <label for="datapicker" class="col-form-label d-block"
                             >Data</label
@@ -561,20 +565,13 @@
                             type="date"
                             id="datepicker"
                             name="datepicker"
+                            class="datapicker"
                             value="2021-06-08"
                             class="form-control"
                             maxlength="50"
                           />
                         </div>
-                        <script type="text/javascript">
-                          $(function () {
-                            $('#datepicker').datepicker({
-                              changeMonth: true,
-                              changeYear: true
-                            })
-                          })
-                        </script>
-                        <!-- end Datapicket -->
+                        <!-- end data picker -->
 
                         <!-- init Cliente Select -->
                         <div class="form-group">
@@ -1167,9 +1164,12 @@
       <script src="libs/toastr.init.js"></script>
       <script src="libs/app.min.js"></script>
 
-      <!-- Jquery datapicker-->
-      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      <!-- Jquery datapicker -->
+      <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+      <script>
+        $('.datapicker').flatpickr({})
+      </script>
+      <!--  -->
     </div>
   </body>
 </html>
