@@ -551,6 +551,31 @@
                     >
                       <!-- init Column Left -->
                       <div class="col-md-6">
+                        <!-- init Datapicket -->
+
+                        <div class="form-group">
+                          <label for="datapicker" class="col-form-label d-block"
+                            >Data</label
+                          >
+                          <input
+                            type="date"
+                            id="datepicker"
+                            name="datepicker"
+                            value="2021-06-08"
+                            class="form-control"
+                            maxlength="50"
+                          />
+                        </div>
+                        <script type="text/javascript">
+                          $(function () {
+                            $('#datepicker').datepicker({
+                              changeMonth: true,
+                              changeYear: true
+                            })
+                          })
+                        </script>
+                        <!-- end Datapicket -->
+
                         <!-- init Cliente Select -->
                         <div class="form-group">
                           <label for="dspcliente" class="col-form-label d-block"
@@ -1141,6 +1166,10 @@
       <script src="libs/jquery.toast.min.js"></script>
       <script src="libs/toastr.init.js"></script>
       <script src="libs/app.min.js"></script>
+
+      <!-- Jquery datapicker-->
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     </div>
   </body>
 </html>
