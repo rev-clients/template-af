@@ -10,6 +10,11 @@
       href="https://alfanegocios.com.ar/sandbox2/reindex.php"
       target="_top"
     />
+    <!-- latest version of flatpickr from jsdelivr.  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
     <link rel="shortcut icon" href="images/favicon.png" />
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="css/bootstrap-table.min.css" rel="stylesheet" type="text/css" />
@@ -551,6 +556,22 @@
                     >
                       <!-- init Column Left -->
                       <div class="col-md-6">
+                        <!-- init data picker -->
+                        <div class="form-group">
+                          <label for="datapicker" class="col-form-label d-block"
+                            >Data</label
+                          >
+                          <input
+                            type="date"
+                            id="datepicker"
+                            name="datepicker"
+                            class="datapicker form-control stymax"
+                            value="2021-06-08"
+                            maxlength="50"
+                          />
+                        </div>
+                        <!-- end data picker -->
+
                         <!-- init Cliente Select -->
                         <div class="form-group">
                           <label for="dspcliente" class="col-form-label d-block"
@@ -1141,6 +1162,13 @@
       <script src="libs/jquery.toast.min.js"></script>
       <script src="libs/toastr.init.js"></script>
       <script src="libs/app.min.js"></script>
+
+      <!-- Jquery datapicker -->
+      <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+      <script>
+        $('.datapicker').flatpickr({})
+      </script>
+      <!--  -->
     </div>
   </body>
 </html>
