@@ -34,6 +34,9 @@
         width: 100%;
         max-width: 370px;
       }
+      .left-side-menu ul > li > ul {
+        display: none;
+      }
     </style>
   </head>
 
@@ -268,7 +271,10 @@
 
         <ul class="list-unstyled topnav-menu topnav-menu-left m-0">
           <li>
-            <button class="button-menu-mobile waves-effect waves-light">
+            <button
+              class="button-menu-mobile waves-effect waves-light"
+              id="button-menu-mobile"
+            >
               <i class="fe-menu"></i>
             </button>
           </li>
@@ -1185,6 +1191,9 @@
 
       <!-- TODO: remplazar app -->
       <script src="libs/app.min.js"></script>
+
+      <!-- Jquery CDN-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
       <!-- Jquery datapicker -->
       <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
