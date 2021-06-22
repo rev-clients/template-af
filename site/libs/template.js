@@ -1,38 +1,38 @@
 $(document).ready(function () {
-  $menu = $('.left-side-menu').find('ul').find('li')
+  SlideDropdownsLeftSideInside()
+})
 
-  $menu.find('ul ul').slideUp()
+function SlideDropdownsLeftSideInside() {
+  var $elements = $('.left-side-menu').find('ul li')
 
-  $menu.hover(
+  $elements.find('.nav-second-level').slideUp()
+
+  $elements.hover(
     function () {
       $(this).addClass('active')
-      $(this).children('ul').stop()
-      $(this).children('ul').slideDown()
-      if ($(this).hasClass('clicked')) {
-        $(this).children('ul').slideDown()
-      }
+      $(this).children('.nav-second-level').stop().slideDown()
     },
     function () {
-      $(this).removeClass('active')
-      $(this).children('ul').stop()
-      $(this).children('ul').slideUp()
+      if (!$(this).hasClass('clicked')) {
+        $(this).removeClass('active')
+        $(this).children('.nav-second-level').stop().slideUp()
+      }
     }
   )
 
-  $(this)
-    .children('ul')
-    .children('li')
-    .click(function () {
-      if ($(this).hasClass('clicked')) {
-        $(this).removeClass('clicked')
-      } else {
-        $(this).addClass('clicked')
-      }
-      console.log('Click : ', $(this).hasClass('clicked'))
-    })
+  $elements.click(function () {
+    if ($(this).hasClass('clicked')) {
+      $(this).removeClass('clicked')
+    } else {
+      $(this).addClass('clicked')
+    }
+  })
+}
 
+function MenuBehavior() {
   $('.button-menu-mobible').click(function () {})
-})
+}
+
 /*$(document).ready(function () {
   $('#button-menu-mobile').click(function () {
     $('.left-side-menu').css({
