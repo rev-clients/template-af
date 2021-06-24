@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  $('.datapicker').flatpickr({})
   SlideDropdownsLeftSideInside()
   MenuBehavior()
 })
