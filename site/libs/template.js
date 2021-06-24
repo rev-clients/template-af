@@ -1,5 +1,6 @@
 $(document).ready(function () {
   SlideDropdownsLeftSideInside()
+  MenuBehavior()
 })
 
 function SlideDropdownsLeftSideInside() {
@@ -30,16 +31,11 @@ function SlideDropdownsLeftSideInside() {
 }
 
 function MenuBehavior() {
-  $('.button-menu-mobible').click(function () {})
-}
-
-/*$(document).ready(function () {
-  $('#button-menu-mobile').click(function () {
-    $('.left-side-menu').css({
-      width: '70px'
-    })
-    $('.content-page').css({
-      margin: '70px 0 0 100px'
-    })
+  $('.button-menu-mobile').click(function () {
+    $('body').toggleClass('enlarged')
   })
-})*/
+
+  $('.right-bar-toggle').click(function () {
+    $('body').toggleClass('right-bar-enabled')
+  })
+}
