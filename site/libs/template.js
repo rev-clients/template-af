@@ -1,5 +1,7 @@
 $(document).ready(function () {
-  $('.datapicker').flatpickr({})
+  $('.datapicker').flatpickr({
+    allowInput: true
+  })
   SlideDropdownsLeftSideInside()
   MenuBehavior()
 })
