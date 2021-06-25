@@ -1,7 +1,10 @@
 $(document).ready(function () {
-  $('.datapicker').flatpickr({})
+  $('.datapicker').flatpickr({
+    allowInput: true
+  })
   SlideDropdownsLeftSideInside()
   MenuBehavior()
+  dropdown()
 })
 
 function SlideDropdownsLeftSideInside() {
@@ -38,5 +41,12 @@ function MenuBehavior() {
 
   $('.right-bar-toggle').click(function () {
     $('body').toggleClass('right-bar-enabled')
+  })
+}
+
+function dropdown() {
+  $('.dropdown').click(function () {
+    $(this).toggleClass('show')
+    $(this).children('.dropdown-menu').toggleClass('show')
   })
 }
