@@ -12,13 +12,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
     />
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link rel="shortcut icon" href="images/favicon.png" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
     <link href="css/bootstrap-table.min.css" rel="stylesheet" type="text/css" />
     <link
       rel="stylesheet"
@@ -47,6 +42,14 @@
       .left-side-menu ul > li > ul {
         display: none;
       }
+
+      .no-transform-translate {
+        transform: translate3d(0, 0, 0px)!important;
+      }
+
+      .no-transform-translate .slimscroll {
+        overflow: scroll;
+      }
     </style>
   </head>
 
@@ -68,7 +71,7 @@
                 >6</span
               >
             </a>
-            <div class="dropdown-menu dropdown-menu-right dropdown-lg">
+            <div class="dropdown-menu dropdown-menu-right dropdown-lg no-transform-translate">
               <!-- Inicio Desplegable Mensajes-->
               <div class="dropdown-item noti-title">
                 <h5 class="m-0">
