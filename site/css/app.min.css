@@ -1655,11 +1655,11 @@ body.boxed-layout.enlarged .footer {
   min-height: 100px;
 }
 .bg-pattern {
-  background-image: url(../images/bg-pattern-2.png);
+  /* background-image: url(../images/bg-pattern-2.png); */
   background-size: cover;
 }
 body.authentication-bg {
-  background-image: url(../images/bg.png);
+  /* background-image: url(../images/bg.png); */
   background-size: cover;
 }
 .logout-icon {
@@ -3879,7 +3879,7 @@ table[data-toggle='table'] {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background-image: url(../images/jsgrid.png);
+  /* background-image: url(../images/jsgrid.png); */
   background-color: #eceff1;
   outline: 0 !important;
 }
@@ -3897,7 +3897,7 @@ table[data-toggle='table'] {
   position: absolute;
 }
 .ms-container {
-  background: transparent url(../images/multiple-arrow.png) no-repeat 50% 50%;
+  /* background: transparent url(../images/multiple-arrow.png) no-repeat 50% 50%; */
   width: auto;
   max-width: 370px;
 }
@@ -4144,10 +4144,10 @@ table[data-toggle='table'] {
   border-radius: 6px;
 }
 .editable-clear-x {
-  background: url(../images/clear.png) center center no-repeat;
+  /* background: url(../images/clear.png) center center no-repeat; */
 }
 .editableform-loading {
-  background: url(../images/loading.gif) center center no-repeat;
+  /* background: url(../images/loading.gif) center center no-repeat; */
 }
 .editable-checklist label {
   display: block;
