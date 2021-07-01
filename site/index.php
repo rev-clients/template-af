@@ -726,7 +726,7 @@
 			<script src="libs/vendor.min.js"></script>
 			<script src="libs/jquery.multi-select.js"></script>
 			<script src="libs/jquery.autocomplete.min.js"></script>
-			<script src="libs/bootstrap-select.min.js"></script>
+			<!-- <script src="libs/bootstrap-select.min.js"></script> -->
 			<script src="libs/bootstrap-maxlength.min.js"></script>
 			<script src="libs/form-advanced.init.es.js"></script>
 			<script src="libs/flatpickr.es.min.js"></script>
