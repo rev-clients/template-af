@@ -19,34 +19,34 @@ function SlideDropdownsLeftSideInside() {
 
   $elements.find('.nav-second-level').slideUp()
 
-  function show() {
-    $(this).addClass('active')
-    $(this).children('.nav-second-level').stop().slideDown()
+  function show($el) {
+    $el.addClass('active')
+    $el.children('.nav-second-level').stop().slideDown()
   }
 
-  function hide() {
-    $(this).removeClass('active')
-    $(this).children('.nav-second-level').stop().slideUp()
+  function hide($el) {
+    $el.removeClass('active')
+    $el.children('.nav-second-level').stop().slideUp()
   }
 
   $elements.hover(
     function () {
-      show()
+      show($(this))
     },
     function () {
-      !$(this).hasClass('clicked') && hide()
+      !$(this).hasClass('clicked') && hide($(this))
     }
   )
 
   $elements.click(function () {
     if ($(this).hasClass('clicked')) {
       $(this).removeClass('clicked')
-      
-      isTablet && show()
+
+      hide($(this))
     } else {
       $(this).addClass('clicked')
 
-      isTablet && hide()
+      show($(this))
     }
   })
 }
