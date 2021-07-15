@@ -7,13 +7,15 @@ checktablet.addEventListener('change', function (e) {
 
 $(document).ready(function () {
   $('.datapicker').flatpickr({
+
     allowInput: true,
     monthSelectorType: 'static'
+
   })
   SlideDropdownsLeftSideInside()
   // Right Side Menu
   RightSideMenu()
-  dropdown()
+
 })
 
 function SlideDropdownsLeftSideInside() {
@@ -61,11 +63,5 @@ function RightSideMenu() {
   $('.right-bar-toggle').click(function () {
     $('body').toggleClass('right-bar-enabled')
   })
-}
 
-function dropdown() {
-  $('.dropdown').click(function () {
-    $(this).toggleClass('show')
-    $(this).children('.dropdown-menu').toggleClass('show')
-  })
 }
