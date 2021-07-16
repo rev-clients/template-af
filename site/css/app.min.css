@@ -4172,3 +4172,9 @@ body {
 .bootstrap-select > .dropdown-toggle {
   line-height: 1.6;
 }
+
+.card-body > form {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
+}
