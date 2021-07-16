@@ -4162,3 +4162,13 @@ body {
 .btn-label {
   padding: 0.8rem 0.9rem;
 }
+.btn:focus,
+.btn-large:focus,
+.btn-small:focus,
+.btn-floating:focus {
+  background-color: #f7f8f9;
+}
+
+.bootstrap-select > .dropdown-toggle {
+  line-height: 1.6;
+}
