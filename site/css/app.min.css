@@ -4178,3 +4178,6 @@ body {
   justify-items: center;
   grid-template-columns: 1fr 1fr;
 }
+.custom-control-label {
+  cursor: pointer;
+}
