@@ -4178,3 +4178,15 @@ body {
   justify-items: center;
   grid-template-columns: 1fr 1fr;
 }
+
+@media screen and (max-width: 767px) {
+  .card-body > form {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr;
+  }
+}
+
+.custom-control-label:hover {
+  cursor: pointer;
+}
