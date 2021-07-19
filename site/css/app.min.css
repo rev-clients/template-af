@@ -4187,8 +4187,10 @@ body {
   }
 }
 
-
 .custom-control-label {
   cursor: pointer;
 }
 
+.checkbox > label {
+  margin-left: 15px;
+}
