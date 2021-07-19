@@ -4187,3 +4187,8 @@ body {
   }
 }
 
+
+.custom-control-label {
+  cursor: pointer;
+}
+
