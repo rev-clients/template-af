@@ -4170,7 +4170,9 @@ body {
 }
 
 .bootstrap-select > .dropdown-toggle {
-  line-height: 1.6;
+  line-height: 2.2;
+  font-size: 0.7rem;
+  color: #323a46;
 }
 
 .card-body > form {
@@ -4187,8 +4189,14 @@ body {
   }
 }
 
-
 .custom-control-label {
   cursor: pointer;
 }
 
+.input-field .prefix.active {
+  color: #fff;
+}
+
+.filter-option-inner-inner {
+  color: #323a46;
+}
