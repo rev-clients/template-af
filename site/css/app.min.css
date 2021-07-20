@@ -23,6 +23,10 @@ button:focus {
 .metismenu ul li {
   width: 100%;
 }
+.nav-second-level {
+  left: 70px;
+  position: absolute;
+}
 .nav-second-level li a,
 .nav-thrid-level li a {
   padding: 8px 20px;
