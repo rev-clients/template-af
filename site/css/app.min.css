@@ -4193,10 +4193,15 @@ body {
   cursor: pointer;
 }
 
+
+.checkbox > label {
+  margin-left: 15px;
+
 .input-field .prefix.active {
   color: #fff;
 }
 
 .filter-option-inner-inner {
   color: var(--dark);
+
 }
