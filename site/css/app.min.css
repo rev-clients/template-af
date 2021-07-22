@@ -4241,6 +4241,9 @@ body {
   color: white;
   border-radius: 5px;
   box-shadow: 0 1px 10px 0 #9d9bff;
+  width: max-content;
+  font-size: 0.9rem;
+  font-weight: 200;
 }
 
 .inputTooltip::before {
@@ -4252,9 +4255,9 @@ body {
   border-bottom: 11px solid transparent;
   position: absolute;
   right: -22px;
-  bottom: 7px;
+  bottom: 4px;
 }
 
 .iconInput:hover .inputTooltip {
-  display: flex;
+  display: block;
 }
