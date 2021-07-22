@@ -561,7 +561,7 @@
                       <!-- init Column Left -->
                       <div class="col-md-11">
                         <!-- init data picker -->
-                        <div class="form-group">
+                        <div class="form-group input-field">
                           <label for="datapicker" class="col-form-label d-block"
                             >Data</label
                           >
@@ -569,8 +569,8 @@
                             type="date"
                             id="datepicker"
                             name="datepicker"
-                            class="datapicker form-control stymax"
-                            maxlength="50"
+                            class="datapicker"
+                            data-length="50"
                           />
                         </div>
                         <!-- end data picker -->
@@ -601,44 +601,56 @@
                         <!-- end Cliente Select -->
 
                         <!-- init URL Field Text  -->
-                        <div class="form-group">
+                        <div class="form-group input-field">
                           <label for="fldsite" class="col-form-label"
                             >URL (<code>*</code>)</label
                           >
                           <input
                             type="text"
-                            class="form-control stymax"
-                            maxlength="50"
+                            class="validate"
+                            data-length="50"
                             required
                             name="fldsite"
                             id="fldsite"
                             value=""
                           />
-                          <div class="valid-feedback">Se ve bien!.</div>
-                          <div class="invalid-feedback">
-                            Algo falta o está incorrecto en URL.
-                          </div>
+                          <i class="material-icons prefix iconInput"
+                            >i
+
+                            <div class="inputTooltip">Tooltip</div>
+                          </i>
+
+                          <span
+                            class="helper-text"
+                            data-error="Algo falta o está incorrecto en URL."
+                            data-success="Se ve bien!"
+                          ></span>
                         </div>
                         <!-- init URL Field Text  -->
 
                         <!-- init Base Field Text  -->
-                        <div class="form-group">
+                        <div class="form-group input-field">
                           <label for="fldbase" class="col-form-label"
                             >Base (<code>*</code>)</label
                           >
                           <input
                             type="text"
-                            class="form-control stymax"
-                            maxlength="16"
+                            class="validate"
                             required
+                            data-length="16"
                             name="fldbase"
                             id="fldbase"
                             value=""
                           />
-                          <div class="valid-feedback">Se ve bien!.</div>
-                          <div class="invalid-feedback">
-                            Algo falta o está incorrecto en Base.
-                          </div>
+                          <i class="material-icons prefix iconInput"
+                            >i
+                            <div class="inputTooltip">Tooltip</div>
+                          </i>
+                          <span
+                            class="helper-text"
+                            data-error="Algo falta o está incorrecto en URL."
+                            data-success="Se ve bien!"
+                          ></span>
                         </div>
                         <!-- init Base Field Text  -->
 
@@ -650,7 +662,7 @@
                           <div class="custom-control custom-switch">
                             <input
                               type="checkbox"
-                              class="custom-control-input"
+                              class="custom-control-input validate"
                               name="chbfixedadm"
                               id="chbfixedadm"
                               value="1"
@@ -686,31 +698,39 @@
 
                         <!-- init inputs collection -->
                         <div class="form-group">
-                          <div class="col-12">
+                          <div class="col-12 input-field">
                             <label for="fldrecsitekey" class="col-form-label"
                               >Clave Pública RC</label
                             >
                             <input
                               type="text"
-                              class="form-control stymax"
-                              maxlength="50"
+                              class="validate"
+                              data-length="50"
                               name="fldrecsitekey"
                               id="fldrecsitekey"
                               value=""
                             />
+                            <i class="material-icons prefix iconInput"
+                              >i
+                              <div class="inputTooltip">Tooltip</div>
+                            </i>
                           </div>
-                          <div class="col-12">
+                          <div class="col-12 input-field">
                             <label for="fldrecsecret" class="col-form-label"
                               >Clave Secreta RC</label
                             >
                             <input
                               type="text"
-                              class="form-control stymax"
-                              maxlength="50"
+                              class="validate"
+                              data-length="50"
                               name="fldrecsecret"
                               id="fldrecsecret"
                               value=""
                             />
+                            <i class="material-icons prefix iconInput"
+                              >i
+                              <div class="inputTooltip">Tooltip</div>
+                            </i>
                           </div>
                           <div class="col-12">
                             <div class="col-12">
@@ -720,7 +740,7 @@
                               <div class="custom-control custom-switch">
                                 <input
                                   type="checkbox"
-                                  class="custom-control-input"
+                                  class="custom-control-input validate"
                                   name="chbestatus"
                                   id="chbestatus"
                                   checked="checked"
@@ -754,19 +774,29 @@
                       <!-- init Column Right -->
                       <div class="col-md-11">
                         <!-- Init Ip Special Text Input -->
-                        <div class="form-group">
+                        <div class="form-group input-field">
                           <label for="fldhost" class="col-form-label"
                             >Ip Especial</label
                           >
                           <input
                             type="text"
-                            class="form-control stymax"
-                            maxlength="20"
+                            class="validate"
+                            data-length="10"
                             name="fldhost"
                             id="fldhost"
                             value=""
                           />
+                          <i class="material-icons prefix iconInput"
+                            >i
+                            <div class="inputTooltip">Tooltip</div>
+                          </i>
+                          <span
+                            class="helper-text"
+                            data-error="Eceso de caracteres"
+                            data-success="right"
+                          ></span>
                         </div>
+
                         <!-- end Ip Special Text Input -->
 
                         <!-- init Seguridad Select  -->
@@ -797,84 +827,107 @@
                         <!-- end Seguridad Select  -->
 
                         <!-- init Username Text Input -->
-                        <div class="form-group">
+                        <div class="form-group input-field">
                           <label for="flduser" class="col-form-label"
                             >UserName (<code>*</code>)</label
                           >
                           <input
                             type="text"
-                            class="form-control stymax"
-                            maxlength="16"
+                            class="validate"
+                            data-length="16"
                             required
                             name="flduser"
                             id="flduser"
                             value=""
                           />
-                          <div class="valid-feedback">Se ve bien!.</div>
-                          <div class="invalid-feedback">
-                            Algo falta o está incorrecto en UserName.
-                          </div>
+                          <i class="material-icons prefix iconInput"
+                            >i
+
+                            <div class="inputTooltip">Tooltip</div>
+                          </i>
+                          <span
+                            class="helper-text"
+                            data-error="Algo falta o está incorrecto en UserName."
+                            data-success="Se ve bien!"
+                          ></span>
                         </div>
                         <!-- end Username Text Input -->
 
                         <!-- init Email Field Text -->
-                        <div class="form-group">
+                        <div class="form-group input-field">
                           <label for="fldmailadm" class="col-form-label"
                             >Email Adm (<code>*</code>)</label
                           >
                           <input
                             type="email"
-                            class="form-control stymax"
-                            maxlength="50"
+                            class="validate"
+                            data-length="50"
                             required
                             name="fldmailadm"
                             id="fldmailadm"
                             value=""
                           />
-                          <div class="valid-feedback">Se ve bien!.</div>
-                          <div class="invalid-feedback">
-                            Algo falta o está incorrecto en Email Adm.
-                          </div>
+                          <i class="material-icons prefix iconInput"
+                            >i
+                            <div class="inputTooltip">Tooltip</div>
+                          </i>
+                          <span
+                            class="helper-text"
+                            data-error="Algo falta o está incorrecto en Email Adm."
+                            data-success="Se ve bien!"
+                          ></span>
                         </div>
                         <!-- end Email Field Text -->
 
                         <!-- init inputs collection -->
                         <div class="form-group">
-                          <div>
+                          <div class="input-field">
                             <label for="fldmaincolor" class="col-form-label"
                               >1º Color (<code>*</code>)</label
                             >
                             <input
                               type="text"
-                              class="form-control stymax"
-                              maxlength="6"
+                              data-length="6"
+                              class="validate"
                               required
                               name="fldmaincolor"
                               id="fldmaincolor"
                               value=""
                             />
-                            <div class="valid-feedback">Se ve bien!.</div>
-                            <div class="invalid-feedback">
-                              Algo falta o está incorrecto en 1º Color.
-                            </div>
+                            <i class="material-icons prefix iconInput"
+                              >i
+                              <div class="inputTooltip">Tooltip</div>
+                            </i>
+                            <span
+                              class="helper-text"
+                              data-error="Algo falta o está incorrecto en 1º Color."
+                              data-success="Se ve bien!"
+                            ></span>
                           </div>
-                          <div>
+                          <div class="input-field">
                             <label for="fldseccolor" class="col-form-label"
                               >2º Color (<code>*</code>)</label
                             >
                             <input
                               type="text"
-                              class="form-control stymax"
-                              maxlength="6"
+                              data-length="6"
+                              class="validate"
                               required
                               name="fldseccolor"
                               id="fldseccolor"
                               value=""
                             />
-                            <div class="valid-feedback">Se ve bien!.</div>
-                            <div class="invalid-feedback">
-                              Algo falta o está incorrecto en 2º Color.
-                            </div>
+                            <i class="material-icons prefix iconInput"
+                              >i
+
+                              <div class="inputTooltip">Tooltip</div>
+                            </i>
+
+                            <span
+                              class="helper-text"
+                              data-error="Algo falta o está incorrecto en 2º Color."
+                              data-success="Se ve bien!"
+                            ></span>
                           </div>
                           <div>
                             <label class="col-form-label"
@@ -882,6 +935,7 @@
                             >
                             <div class="custom-control custom-switch">
                               <input
+                                class="validate"
                                 type="checkbox"
                                 class="custom-control-input"
                                 name="chbfullsite"
@@ -901,11 +955,11 @@
                         <!-- init Servicios Squares Selection -->
                         <div class="form-group">
                           <label for="mslservicio" class="col-form-label"
-                            >Servicio (<code>*</code>)</label
-                          >
+                            >Servicio (<code>*</code>)
+                          </label>
                           <select
                             multiple="multiple"
-                            class="multi-select"
+                            class="multi-select validate"
                             required
                             id="mslservicio"
                             name="mslservicio[]"
