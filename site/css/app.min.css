@@ -4319,3 +4319,51 @@ span > a > small,
   text-decoration: none;
   background-color: var(--secondary);
 }
+
+.ms-list {
+  background-color: var(--white);
+}
+
+.content-page {
+  background-color: var(--light);
+}
+
+.footer {
+  background-color: var(--white);
+}
+body {
+  --light: #343a40;
+  --white: var(--dark);
+  --gray-dark: #fff;
+}
+
+.btn,
+.breadcrumb-item > a,
+.right-bar-toggle > i,
+h5,
+.filter-option-inner-inner,
+.text-white,
+.ms-elem-selectable > span,
+a > span,
+.nav-second-level > li > a,
+.inbox-item-author > a,
+.inbox-item-author > a:hover,
+.fe-menu,
+.fas,
+span > a > small,
+.user-img > a > i {
+  color: white !important;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+  --white: var(--dark);
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover,
+.dropdown-item .notify-item .active {
+  color: var(--dark);
+  text-decoration: none;
+  background-color: var(--secondary);
+}
