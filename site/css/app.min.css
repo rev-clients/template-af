@@ -24,7 +24,7 @@ button:focus {
   width: 100%;
 }
 
-.nav-second-level {
+.enlarged .nav-second-level {
   position: absolute;
   left: 70px;
   display: none;
