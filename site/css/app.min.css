@@ -24,7 +24,7 @@ button:focus {
   width: 100%;
 }
 
-.nav-second-level {
+.enlarged .nav-second-level {
   position: absolute;
   left: 70px;
   display: none;
@@ -3861,6 +3861,11 @@ table[data-toggle='table'] {
 .bootstrap-select:not([class*='col-']):not([class*='form-control']):not(.input-group-btn) {
   width: 100% !important;
 }
+.bootstrap-select .dropdown-toggle .filter-option {
+  display: flex;
+  align-items: center;
+}
+
 .bootstrap-select .dropdown-toggle:before {
   content: '\F140';
   display: inline-block;
@@ -4027,12 +4032,6 @@ table[data-toggle='table'] {
   background: var(--white);
   border-radius: 6px;
 }
-.editable-clear-x {
-  /* background: url(../images/clear.png) center center no-repeat; */
-}
-.editableform-loading {
-  /* background: url(../images/loading.gif) center center no-repeat; */
-}
 .editable-checklist label {
   display: block;
 }
@@ -4178,8 +4177,8 @@ body {
 }
 
 .bootstrap-select > .dropdown-toggle {
-  line-height: 2.2;
-  font-size: 0.7rem;
+  line-height: 1.5;
+
   color: var(--dark);
 }
 
@@ -4212,6 +4211,65 @@ body {
 
 .filter-option-inner-inner {
   color: var(--dark);
+  text-transform: capitalize;
+}
+
+.iconInput {
+  right: 15px;
+  top: 20px !important;
+  padding: 0 2px;
+  font-size: 1.2rem !important;
+  font-weight: 600;
+  text-shadow: 1px 1px 10px black;
+  cursor: help;
+  color: #9d9bff;
+}
+
+.input-field .prefix {
+  width: 0;
+}
+
+.character-counter {
+  position: absolute;
+  bottom: 0px;
+}
+
+.inputTooltip {
+  display: none;
+  position: absolute;
+  right: 20px;
+  bottom: -4px;
+  padding: 5px 10px;
+  background-color: #9d9bff;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0 1px 10px 0 #9d9bff;
+  width: max-content;
+  font-size: 0.9rem;
+  font-weight: 200;
+}
+
+.inputTooltip::before {
+  content: "";
+  display: block;
+  border-top: 11px solid transparent;
+  border-left: 11px solid #9d9bff;
+  border-right: 11px solid transparent;
+  border-bottom: 11px solid transparent;
+  position: absolute;
+  right: -22px;
+  bottom: 4px;
+}
+
+.iconInput:hover .inputTooltip {
+  display: block;
+}
+
+.button-group {
+  padding: 1px;
+  display: flex;
+  justify-content: center;
+  margin: 25px 0;
 }
 
 .ms-list {

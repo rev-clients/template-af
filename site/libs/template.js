@@ -7,15 +7,12 @@ checktablet.addEventListener('change', function (e) {
 
 $(document).ready(function () {
   $('.datapicker').flatpickr({
-
     allowInput: true,
     monthSelectorType: 'static'
-
   })
   SlideDropdownsLeftSideInside()
   // Right Side Menu
   RightSideMenu()
-
 })
 
 function SlideDropdownsLeftSideInside() {
@@ -63,5 +60,10 @@ function RightSideMenu() {
   $('.right-bar-toggle').click(function () {
     $('body').toggleClass('right-bar-enabled')
   })
-
 }
+
+$(document).ready(function () {
+  $(
+    'input#fldhost, input#fldsite, input#fldbase, input#fldrecsitekey, input#fldrecsecret, input#flduser, input#fldmailadm, input#fldmaincolor, input#fldseccolor'
+  ).characterCounter()
+})
