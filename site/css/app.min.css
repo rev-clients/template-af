@@ -4238,7 +4238,8 @@ body {
   display: none;
   position: absolute;
   right: 20px;
-  bottom: -4px;
+  max-width: 340px;
+  top: 0;
   padding: 5px 10px;
   background-color: #9d9bff;
   color: white;
@@ -4247,10 +4248,12 @@ body {
   width: max-content;
   font-size: 0.9rem;
   font-weight: 200;
+  word-break: break-word;
+  z-index: 500;
 }
 
 .inputTooltip::before {
-  content: "";
+  content: '';
   display: block;
   border-top: 11px solid transparent;
   border-left: 11px solid #9d9bff;
@@ -4258,7 +4261,7 @@ body {
   border-bottom: 11px solid transparent;
   position: absolute;
   right: -22px;
-  bottom: 4px;
+  top: 4px;
 }
 
 .iconInput:hover .inputTooltip {
@@ -4292,7 +4295,6 @@ body {
 .btn,
 .breadcrumb-item > a,
 .right-bar-toggle > i,
-h5,
 .filter-option-inner-inner,
 .text-white,
 .ms-elem-selectable > span,
@@ -4303,12 +4305,16 @@ a > span,
 .fe-menu,
 .fas,
 span > a > small,
-.user-img > a > i {
+.user-img > a > i,
+input {
   color: white !important;
 }
 
 .dropdown-item:focus,
-.dropdown-item:hover {
+.dropdown-item:hover,
+.dropdown-item.active,
+.dropdown-item:active,
+dropdown-item active selected {
   --white: var(--dark);
 }
 
@@ -4337,22 +4343,14 @@ body {
   --gray-dark: #fff;
 }
 
-.btn,
-.breadcrumb-item > a,
-.right-bar-toggle > i,
-h5,
-.filter-option-inner-inner,
-.text-white,
-.ms-elem-selectable > span,
-a > span,
-.nav-second-level > li > a,
-.inbox-item-author > a,
-.inbox-item-author > a:hover,
-.fe-menu,
-.fas,
-span > a > small,
-.user-img > a > i {
-  color: white !important;
+.col-form-label,
+.input-field > label {
+  color: var(--secondary);
+}
+
+hr,
+.footer {
+  border-color: #3e3e3e;
 }
 
 .dropdown-item:focus,
@@ -4362,8 +4360,27 @@ span > a > small,
 
 .dropdown-item:focus,
 .dropdown-item:hover,
-.dropdown-item .notify-item .active {
+.bootstrap-select > .dropdown-toggle {
   color: var(--dark);
   text-decoration: none;
   background-color: var(--secondary);
+  color: white;
+}
+
+.card-body,
+.ms-container .ms-selection li.ms-elem-selection {
+  color: white;
+}
+
+.dropdown-item.active,
+.dropdown-item:active,
+.btn-light:not(:disabled):not(.disabled).active,
+.btn-light:not(:disabled):not(.disabled):active,
+.show > .btn-light.dropdown-toggle {
+  background-color: var(--secondary);
+  color: white;
+}
+
+input {
+  color: white;
 }
