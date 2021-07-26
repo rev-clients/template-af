@@ -13,6 +13,8 @@ $(document).ready(function () {
   SlideDropdownsLeftSideInside()
   // Right Side Menu
   RightSideMenu()
+  validationForm()
+  handleDarkMode()
 })
 
 function SlideDropdownsLeftSideInside() {
@@ -62,8 +64,14 @@ function RightSideMenu() {
   })
 }
 
-$(document).ready(function () {
+function validationForm() {
   $(
     'input#fldhost, input#fldsite, input#fldbase, input#fldrecsitekey, input#fldrecsecret, input#flduser, input#fldmailadm, input#fldmaincolor, input#fldseccolor'
   ).characterCounter()
-})
+}
+
+function handleDarkMode() {
+  if ($('#chbfixedaddt')[0].checked) {
+    console.log($('#chbfixedaddt'))
+  }
+}

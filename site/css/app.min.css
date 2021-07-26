@@ -4200,8 +4200,8 @@ body {
   cursor: pointer;
 }
 
-.checkbox > label {
-  margin-left: 15px;
+.checkbox-right-side-menu > label {
+  margin-left: 21px;
   line-height: 2;
 }
 
@@ -4286,6 +4286,20 @@ body {
 .footer {
   background-color: var(--white);
 }
+
+.content-page {
+  background-color: var(--light);
+}
+
+.col-form-label,
+.input-field > label {
+  color: var(--secondary);
+}
+
+/* ******************************
+ ? Inicio del dark mode
+* ******************************* */
+
 body {
   --light: #343a40;
   --white: var(--dark);
@@ -4306,46 +4320,20 @@ a > span,
 .fas,
 span > a > small,
 .user-img > a > i,
-input {
-  color: white !important;
+.card-body,
+.ms-container .ms-selection li.ms-elem-selection,
+input,
+.badge-danger,
+.badge,
+.fe-bell,
+.dropdown-toggle::after,
+a {
+  color: var(--gray-dark) !important;
 }
 
-.dropdown-item:focus,
-.dropdown-item:hover,
-.dropdown-item.active,
-.dropdown-item:active,
-dropdown-item active selected {
-  --white: var(--dark);
-}
-
-.dropdown-item:focus,
-.dropdown-item:hover,
-.dropdown-item .notify-item .active {
-  color: var(--dark);
-  text-decoration: none;
-  background-color: var(--secondary);
-}
-
-.ms-list {
-  background-color: var(--white);
-}
-
-.content-page {
-  background-color: var(--light);
-}
-
+.ms-list,
 .footer {
   background-color: var(--white);
-}
-body {
-  --light: #343a40;
-  --white: var(--dark);
-  --gray-dark: #fff;
-}
-
-.col-form-label,
-.input-field > label {
-  color: var(--secondary);
 }
 
 hr,
@@ -4354,21 +4342,12 @@ hr,
 }
 
 .dropdown-item:focus,
-.dropdown-item:hover {
-  --white: var(--dark);
-}
-
-.dropdown-item:focus,
 .dropdown-item:hover,
+.dropdown-item .notify-item .active,
 .bootstrap-select > .dropdown-toggle {
   color: var(--dark);
   text-decoration: none;
   background-color: var(--secondary);
-  color: white;
-}
-
-.card-body,
-.ms-container .ms-selection li.ms-elem-selection {
   color: white;
 }
 
@@ -4378,9 +4357,5 @@ hr,
 .btn-light:not(:disabled):not(.disabled):active,
 .show > .btn-light.dropdown-toggle {
   background-color: var(--secondary);
-  color: white;
-}
-
-input {
   color: white;
 }
