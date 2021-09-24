@@ -1,35 +1,35 @@
-const checktablet = window.matchMedia('(max-width: 767px)')
-let isTablet = window.matchMedia('(max-width: 767px)').matches
+const checktablet = window.matchMedia("(max-width: 767px)")
+let isTablet = window.matchMedia("(max-width: 767px)").matches
 
-checktablet.addEventListener('change', function (e) {
+checktablet.addEventListener("change", function (e) {
   isTablet = e.matches
 })
 
 $(document).ready(function () {
-  $('.datapicker').flatpickr({
+  $(".datapicker").flatpickr({
     allowInput: true,
-    monthSelectorType: 'static'
+    monthSelectorType: "static",
   })
   SlideDropdownsLeftSideInside()
   // Right Side Menu
   RightSideMenu()
   validationForm()
-  handleDarkMode()
+  // handleDarkMode()
 })
 
 function SlideDropdownsLeftSideInside() {
-  var $elements = $('.left-side-menu').find('ul li')
+  var $elements = $(".left-side-menu").find("ul li")
 
-  $elements.find('.nav-second-level').slideUp()
+  $elements.find(".nav-second-level").slideUp()
 
   function show($el) {
-    $el.addClass('active')
-    $el.children('.nav-second-level').stop().slideDown()
+    $el.addClass("active")
+    $el.children(".nav-second-level").stop().slideDown()
   }
 
   function hide($el) {
-    $el.removeClass('active')
-    $el.children('.nav-second-level').stop().slideUp()
+    $el.removeClass("active")
+    $el.children(".nav-second-level").stop().slideUp()
   }
 
   $elements.hover(
@@ -37,17 +37,17 @@ function SlideDropdownsLeftSideInside() {
       show($(this))
     },
     function () {
-      !$(this).hasClass('clicked') && hide($(this))
+      !$(this).hasClass("clicked") && hide($(this))
     }
   )
 
   $elements.click(function () {
-    if ($(this).hasClass('clicked')) {
-      $(this).removeClass('clicked')
+    if ($(this).hasClass("clicked")) {
+      $(this).removeClass("clicked")
 
       hide($(this))
     } else {
-      $(this).addClass('clicked')
+      $(this).addClass("clicked")
 
       show($(this))
     }
@@ -55,17 +55,27 @@ function SlideDropdownsLeftSideInside() {
 }
 
 function RightSideMenu() {
-  $('.button-menu-mobile').click(function () {
-    $('body').toggleClass(isTablet ? ' sidebar-enable' : 'enlarged')
+  $(".button-menu-mobile").click(function () {
+    $("body").toggleClass(isTablet ? " sidebar-enable" : "enlarged")
   })
 
-  $('.right-bar-toggle').click(function () {
-    $('body').toggleClass('right-bar-enabled')
+  $(".right-bar-toggle").click(function () {
+    $("body").toggleClass("right-bar-enabled")
   })
 }
 
 function validationForm() {
   $(
-    'input#fldhost, input#fldsite, input#fldbase, input#fldrecsitekey, input#fldrecsecret, input#flduser, input#fldmailadm, input#fldmaincolor, input#fldseccolor'
+    "input#fldhost, input#fldsite, input#fldbase, input#fldrecsitekey, input#fldrecsecret, input#flduser, input#fldmailadm, input#fldmaincolor, input#fldseccolor"
   ).characterCounter()
+}
+
+function handleDarkMode() {
+  $("#chbfixedaddt").on("click", function () {
+    if ($("#chbfixedaddt")[0].checked) {
+      $("body").addClass("dark-mode")
+    } else {
+      $("body").removeClass("dark-mode")
+    }
+  })
 }
