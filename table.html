@@ -36,6 +36,8 @@
     <link href="css/multi-select.css" rel="stylesheet" type="text/css" />
 
     <link href="css/app.min.css" rel="stylesheet" type="text/css" />
+
+    <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet">
   </head>
 
   <body>
@@ -625,6 +627,7 @@
                 data-url="https://examples.wenzhixin.net.cn/examples/bootstrap_table/data"
                 data-response-handler="responseHandler"
               ></table>
+              <i class="bi-alarm"></i>
             </div>
             <!-- end Tables -->
           </div>
@@ -922,7 +925,7 @@
           "</a>  ",
           '<a class="remove" href="javascript:void(0)" title="Remove">',
           '<i class="fa fa-trash"></i>',
-          "</a>",
+          "</a>"
         ].join("")
       }
 
@@ -933,9 +936,9 @@
         "click .remove": function (e, value, row, index) {
           $table.bootstrapTable("remove", {
             field: "id",
-            values: [row.id],
+            values: [row.id]
           })
-        },
+        }
       }
 
       function totalTextFormatter(data) {
@@ -971,7 +974,7 @@
                 checkbox: true,
                 rowspan: 2,
                 align: "center",
-                valign: "middle",
+                valign: "middle"
               },
               {
                 title: "Item ID",
@@ -980,13 +983,13 @@
                 align: "center",
                 valign: "middle",
                 sortable: true,
-                footerFormatter: totalTextFormatter,
+                footerFormatter: totalTextFormatter
               },
               {
                 title: "Item Detail",
                 colspan: 3,
-                align: "center",
-              },
+                align: "center"
+              }
             ],
             [
               {
@@ -994,14 +997,14 @@
                 title: "Item Name",
                 sortable: true,
                 footerFormatter: totalNameFormatter,
-                align: "center",
+                align: "center"
               },
               {
                 field: "price",
                 title: "Item Price",
                 sortable: true,
                 align: "center",
-                footerFormatter: totalPriceFormatter,
+                footerFormatter: totalPriceFormatter
               },
               {
                 field: "operate",
@@ -1009,10 +1012,10 @@
                 align: "center",
                 clickToSelect: false,
                 events: window.operateEvents,
-                formatter: operateFormatter,
-              },
-            ],
-          ],
+                formatter: operateFormatter
+              }
+            ]
+          ]
         })
         $table.on(
           "check.bs.table uncheck.bs.table " +
@@ -1035,7 +1038,7 @@
           var ids = getIdSelections()
           $table.bootstrapTable("remove", {
             field: "id",
-            values: ids,
+            values: ids
           })
           $remove.prop("disabled", true)
         })

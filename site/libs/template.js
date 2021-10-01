@@ -8,13 +8,13 @@ checktablet.addEventListener("change", function (e) {
 $(document).ready(function () {
   $(".datapicker").flatpickr({
     allowInput: true,
-    monthSelectorType: "static",
+    monthSelectorType: "static"
   })
   SlideDropdownsLeftSideInside()
   // Right Side Menu
   RightSideMenu()
   validationForm()
-  // handleDarkMode()
+  handleDarkMode()
 })
 
 function SlideDropdownsLeftSideInside() {

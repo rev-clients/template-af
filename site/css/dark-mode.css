@@ -30,7 +30,8 @@
 .dark-mode .fe-bell,
 .dark-mode .dropdown-toggle::after,
 .dark-mode a,
-.dark-mode h4 {
+.dark-mode h4,
+table {
   color: var(--gray-dark) !important;
 }
 
