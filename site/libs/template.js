@@ -59,7 +59,7 @@ function RightSideMenu() {
     $("body").toggleClass(isTablet ? " sidebar-enable" : "enlarged")
   })
 
-  $(".right-bar-toggle").click(function () {
+  $(".right-bar-toggle, .rightbar-overlay").click(function () {
     $("body").toggleClass("right-bar-enabled")
   })
 }
