@@ -4182,14 +4182,23 @@ body {
   color: var(--dark);
 }
 
-.card-body > form {
+.form-row {
+  justify-content: center;
+}
+
+.card-body > form.one-column {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.card-body > form.two-column {
   display: grid;
   justify-items: center;
   grid-template-columns: 1fr 1fr;
 }
 
 @media screen and (max-width: 767px) {
-  .card-body > form {
+  .card-body > form.two-column {
     display: grid;
     justify-items: center;
     grid-template-columns: 1fr;

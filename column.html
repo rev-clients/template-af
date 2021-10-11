@@ -357,15 +357,15 @@
           <div id="sidebar-menu">
             <ul class="metismenu" id="side-menu">
               <li>
-                <a href="../table.html">
+                <a href="../index.html">
                   <i class="fas fa-hashtag"></i>
-                  <span> Tabla </span>
+                  <span> Index </span>
                 </a>
               </li>
               <li>
-                <a href="../column.html">
+                <a href="../table.html">
                   <i class="fas fa-hashtag"></i>
-                  <span> Form 1 column </span>
+                  <span> Tabla </span>
                 </a>
               </li>
               <li>
@@ -479,7 +479,13 @@
                   </li>
                 </ul>
               </li>
-              
+              <li>
+                <a href="../table.html">
+                  <i class="fas fa-hashtag"></i>
+                  <span> Tabla </span>
+                  <span class="menu-arrow"></span>
+                </a>
+              </li>
               <li>
                 <a href="javascript: void(0);">
                   <i class="fas fa-magic"></i>
@@ -555,7 +561,7 @@
                 </div>
               </div>
             </div>
-            <!-- init Form content -->
+            <!-- init Row 1-->
             <div class="row">
               <div class="col-12">
                 <div class="card">
@@ -566,9 +572,8 @@
                       id="frmratc"
                       target=""
                       method="post"
-                      class="needs-validation form-row two-column"
-                      novalidate
-                    >
+                      class="needs-validation form-row one-column">
+                      
                       <!-- init Column Left -->
                       <div class="col-md-11">
                         <!-- init data picker -->
@@ -859,11 +864,7 @@
                           (<code>*</code>) Campos necesarios
                         </div>
                         <!-- end inforamtion section -->
-                      </div>
-                      <!-- end Column Left -->
-
-                      <!-- init Column Right -->
-                      <div class="col-md-11">
+                      
                         <!-- Init Ip Special Text Input -->
                         <div class="form-group input-field">
                           <label for="fldhost" class="col-form-label"
@@ -1142,7 +1143,590 @@
                 </div>
               </div>
             </div>
-            <!-- end Form content -->
+            <!-- end Row 1 -->
+             <!-- init Row 2-->
+             <div class="row">
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-body">
+                    <!-- init Content form template -->
+                    <form
+                      name="frmratc"
+                      id="frmratc"
+                      target=""
+                      method="post"
+                      class="needs-validation form-row ">
+                      
+                      <!-- init Column Left -->
+                      <div class="col-md-11">
+                        <!-- init data picker -->
+                        <div class="form-group input-field">
+                          <label for="datapicker" class="col-form-label d-block"
+                            >Data</label
+                          >
+                          <input
+                            type="date"
+                            id="datepicker"
+                            name="datepicker"
+                            class="datapicker"
+                            data-length="50"
+                          />
+                        </div>
+                        <!-- end data picker -->
+
+                        <!-- init Cliente Select -->
+                        <div class="form-group">
+                          <label
+                            for="dspcliente"
+                            class="col-form-label d-block select-input-cliente"
+                            >Cliente
+                            <i class=" iconLabelTooltip"
+                            >i
+
+                            <div class="labelTooltip">
+                              <p>
+                                Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit. Voluptatem placeat ipsum,
+                                error dolorem deserunt doloribus quidem sunt.
+                              </p>
+                            </div>
+                          </i>
+                            </label>
+                          <select
+                            class="selectpicker"
+                            data-live-search="true"
+                            data-style="btn-light"
+                            name="dspcliente"
+                            id="dspcliente"
+                            tabindex="-98"
+                          >
+                            <option value="">Seleccione..</option>
+                            <option value="0">Alberto</option>
+                            <option value="1">Mónica</option>
+                            <option value="2">Ricardo</option>
+                            <option value="3">Irma</option>
+                            <option value="4">Alexis</option>
+                          </select>
+                        </div>
+                        <!-- end Cliente Select -->
+
+                        <!-- init URL Field Text  -->
+                        <div class="form-group input-field">
+                          <label for="fldsite" class="col-form-label"
+                            >URL (<code>*</code>)</label
+                          >
+                          <input
+                            type="text"
+                            class="validate"
+                            data-length="50"
+                            required
+                            name="fldsite"
+                            id="fldsite"
+                            value=""
+                          />
+                          <i class="material-icons prefix iconInput"
+                            >i
+
+                            <div class="inputTooltip">
+                              <p>
+                                Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit. Voluptatem placeat ipsum,
+                                error dolorem deserunt doloribus quidem sunt.
+                                Numquam veniam possimus modi inventore autem
+                                atque esse, neque, molestiae, tempora eius
+                                sapiente? Minus, consequuntur? Adipisci,
+                                cupiditate sint. Velit, impedit facilis quae
+                                distinctio odio accusamus et aut incidunt, eius
+                                perspiciatis dolor consequatur ut! Suscipit
+                                quas, corporis quae vitae quia officia. Nisi,
+                                commodi repellendus! Quisquam minus odit sunt
+                                commodi corporis dolores necessitatibus nostrum
+                                facilis corrupti consequuntur alias, placeat,
+                                blanditiis itaque officiis qui debitis cum
+                                libero! Qui unde perspiciatis quia doloribus,
+                                culpa modi eligendi cupiditate! Consectetur,
+                                quis quas! Ex quibusdam enim fugit voluptas
+                                nobis, perferendis sit quis velit distinctio
+                                reprehenderit asperiores dolorem consequuntur
+                                eius omnis quia maiores totam laborum, illum
+                                voluptatem exercitationem. Impedit, quos nemo.
+                                Blanditiis repellat delectus magnam maxime?
+                              </p>
+                            </div>
+                          </i>
+
+                          <span
+                            class="helper-text"
+                            data-error="Algo falta o está incorrecto en URL."
+                            data-success="Se ve bien!"
+                          ></span>
+                        </div>
+                        <!-- init URL Field Text  -->
+
+                        <!-- init Base Field Text  -->
+                        <div class="form-group input-field">
+                          <label for="fldbase" class="col-form-label"
+                            >Base (<code>*</code>)</label
+                          >
+                          <input
+                            type="text"
+                            class="validate"
+                            required
+                            data-length="16"
+                            name="fldbase"
+                            id="fldbase"
+                            value=""
+                          />
+                          <i class="material-icons prefix iconInput"
+                            >i
+                            <div class="inputTooltip">Base</div>
+                          </i>
+                          <span
+                            class="helper-text"
+                            data-error="Algo falta o está incorrecto en URL."
+                            data-success="Se ve bien!"
+                          ></span>
+                        </div>
+                        <!-- init Base Field Text  -->
+
+                        <!-- init Admin fijo Tooltip selection -->
+                        <div class="form-group flex-column">
+                          <label class="col-form-label"
+                            ><br />Admin fijo (<code>*</code>)
+                            <i class=" iconLabelTooltip"
+                            >i
+
+                            <div class="labelTooltip">
+                              <p>
+                                Admin fijo
+                              </p>
+                            </div>
+                          </i>
+                            </label
+                          >
+                          <div class="custom-control custom-switch">
+                            <input
+                              type="checkbox"
+                              class="custom-control-input validate"
+                              name="chbfixedadm"
+                              id="chbfixedadm"
+                              value="1"
+                            />
+                            <label
+                              for="chbfixedadm"
+                              class="custom-control-label"
+                              >Admin fijo
+                              
+                              </label
+                            >
+                          </div>
+                        </div>
+                        <!-- end Admin fijo Tooltip selection -->
+
+                        <!-- init Idiomass Squares Selection -->
+                        <div class="form-group">
+                          <label for="mslidiomas" class="col-form-label"
+                            >Idiomas
+                            <i class=" iconLabelTooltip"
+                            >i
+
+                            <div class="labelTooltip">
+                              <p>
+                                Idimoas
+                              </p>
+                            </div>
+                          </i>
+                            </label
+                          >
+                          <select
+                            multiple="multiple"
+                            class="multi-select wd-50"
+                            id="mslidiomas"
+                            name="mslidiomas[]"
+                            data-plugin="multiselect"
+                          >
+                            <option value="0">Castellano</option>
+                            <option value="1">Inglés</option>
+                            <option value="2">Croata</option>
+                            <option value="3">Islandés</option>
+                          </select>
+                        </div>
+                        <!-- end Idiomass Squares Selection -->
+
+                        <!-- init inputs collection -->
+                        <div class="form-group">
+                          <div class="col-12 input-field">
+                            <label for="fldrecsitekey" class="col-form-label"
+                              >Clave Pública RC</label
+                            >
+                            <input
+                              type="text"
+                              class="validate"
+                              data-length="50"
+                              name="fldrecsitekey"
+                              id="fldrecsitekey"
+                              value=""
+                            />
+                            <i class="material-icons prefix iconInput"
+                              >i
+                              <div class="inputTooltip">Clave Pública RC</div>
+                            </i>
+                            <span
+                              class="helper-text"
+                              data-error=""
+                              data-success=""
+                            ></span>
+                          </div>
+                          <div class="col-12 input-field">
+                            <label for="fldrecsecret" class="col-form-label"
+                              >Clave Secreta RC</label
+                            >
+                            <input
+                              type="text"
+                              class="validate"
+                              data-length="50"
+                              name="fldrecsecret"
+                              id="fldrecsecret"
+                              value=""
+                            />
+                            <i class="material-icons prefix iconInput"
+                              >i
+                              <div class="inputTooltip">Clave Secreta RC</div>
+                            </i>
+                            <span
+                              class="helper-text"
+                              data-error=""
+                              data-success=""
+                            ></span>
+                          </div>
+                          <div class="col-12">
+                            <div class="col-12">
+                              <label class="col-form-label"
+                                ><br />Estado (<code>*</code>)
+                                <i class=" iconLabelTooltip"
+                            >i
+
+                            <div class="labelTooltip">
+                              <p>
+                                Estado
+                              </p>
+                            </div>
+                          </i>
+                                </label
+                              >
+                              <div class="custom-control custom-switch">
+                                <input
+                                  type="checkbox"
+                                  class="custom-control-input validate"
+                                  name="chbestatus"
+                                  id="chbestatus"
+                                  checked="checked"
+                                  value="1"
+                                />
+                                <label
+                                  for="chbestatus"
+                                  class="custom-control-label"
+                                  >Activo
+                                  
+                                  </label
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- end inputs collection -->
+
+                        <!-- init inforamtion section -->
+                        <div class="form-group">
+                          <input
+                            type="hidden"
+                            name="rid"
+                            id="rid"
+                            value="0"
+                          /><br /><br />
+                          (<code>*</code>) Campos necesarios
+                        </div>
+                        <!-- end inforamtion section -->
+                      
+                        <!-- Init Ip Special Text Input -->
+                        <div class="form-group input-field">
+                          <label for="fldhost" class="col-form-label"
+                            >Ip Especial</label
+                          >
+                          <input
+                            type="text"
+                            class="validate"
+                            data-length="10"
+                            name="fldhost"
+                            id="fldhost"
+                            value=""
+                          />
+                          <i class="material-icons prefix iconInput"
+                            >i
+                            <div class="inputTooltip">Ip Especial</div>
+                          </i>
+                          <span
+                            class="helper-text"
+                            data-error="Algo falta o está incorrecto en Ip Especial."
+                            data-success="Se ve bien!"
+                          ></span>
+                        </div>
+
+                        <!-- end Ip Special Text Input -->
+
+                        <!-- init Seguridad Select  -->
+                        <div class="form-group">
+                          <label
+                            for="dspseguri"
+                            class="col-form-label col-12 select-input-seguridad"
+                            >Seguridad (<code>*</code>)
+                            <i class=" iconLabelTooltip"
+                            >i
+
+                            <div class="labelTooltip">
+                              <p>
+                                Seguridad
+                              </p>
+                            </div>
+                          </i>
+                            </label
+                          >
+                          <select
+                            class="selectpicker"
+                            data-live-search="true"
+                            data-style="btn-light"
+                            required
+                            name="dspseguri"
+                            id="dspseguri"
+                          >
+                            <option value="">Seleccione..</option>
+                            <option value="0">BajaMedia</option>
+                            <option value="1">Alta</option>
+                            <option value="2">Estricta</option>
+                          </select>
+                          <div class="valid-feedback">Se ve bien!.</div>
+                          <div class="invalid-feedback">
+                            Algo falta o está incorrecto en Seguridad.
+                          </div>
+                        </div>
+                        <!-- end Seguridad Select  -->
+
+                        <!-- init Username Text Input -->
+                        <div class="form-group input-field">
+                          <label for="flduser" class="col-form-label"
+                            >UserName (<code>*</code>)</label
+                          >
+                          <input
+                            type="text"
+                            class="validate"
+                            data-length="16"
+                            required
+                            name="flduser"
+                            id="flduser"
+                            value=""
+                          />
+                          <i class="material-icons prefix iconInput"
+                            >i
+
+                            <div class="inputTooltip">UserName</div>
+                          </i>
+                          <span
+                            class="helper-text"
+                            data-error="Algo falta o está incorrecto en UserName."
+                            data-success="Se ve bien!"
+                          ></span>
+                        </div>
+                        <!-- end Username Text Input -->
+
+                        <!-- init Email Field Text -->
+                        <div class="form-group input-field">
+                          <label for="fldmailadm" class="col-form-label"
+                            >Email Adm (<code>*</code>)</label
+                          >
+                          <input
+                            type="email"
+                            class="validate"
+                            data-length="50"
+                            required
+                            name="fldmailadm"
+                            id="fldmailadm"
+                            value=""
+                          />
+                          <i class="material-icons prefix iconInput"
+                            >i
+                            <div class="inputTooltip">Email Adm</div>
+                          </i>
+                          <span
+                            class="helper-text"
+                            data-error="Algo falta o está incorrecto en Email Adm."
+                            data-success="Se ve bien!"
+                          ></span>
+                        </div>
+                        <!-- end Email Field Text -->
+
+                        <!-- init inputs collection -->
+                        <div class="form-group">
+                          <div class="input-field">
+                            <label for="fldmaincolor" class="col-form-label"
+                              >1º Color (<code>*</code>)</label
+                            >
+                            <input
+                              type="text"
+                              data-length="6"
+                              class="validate"
+                              required
+                              name="fldmaincolor"
+                              id="fldmaincolor"
+                              value=""
+                            />
+                            <i class="material-icons prefix iconInput"
+                              >i
+                              <div class="inputTooltip">1º Color</div>
+                            </i>
+                            <span
+                              class="helper-text"
+                              data-error="Algo falta o está incorrecto en 1º Color."
+                              data-success="Se ve bien!"
+                            ></span>
+                          </div>
+                          <div class="input-field">
+                            <label for="fldseccolor" class="col-form-label"
+                              >2º Color (<code>*</code>)</label
+                            >
+                            <input
+                              type="text"
+                              data-length="6"
+                              class="validate"
+                              required
+                              name="fldseccolor"
+                              id="fldseccolor"
+                              value=""
+                            />
+                            <i class="material-icons prefix iconInput"
+                              >i
+
+                              <div class="inputTooltip">2º Color</div>
+                            </i>
+
+                            <span
+                              class="helper-text"
+                              data-error="Algo falta o está incorrecto en 2º Color."
+                              data-success="Se ve bien!"
+                            ></span>
+                          </div>
+                          <div>
+                            <label class="col-form-label"
+                              ><br />Sitio Amplio (<code>*</code>)
+                              <i class=" iconLabelTooltip"
+                            >i
+
+                            <div class="labelTooltip">
+                              <p>
+                                Sitio amplio
+                              </p>
+                            </div>
+                          </i>
+                              </label
+                            >
+                            <div class="custom-control custom-switch">
+                              <input
+                                type="checkbox"
+                                class="custom-control-input"
+                                name="chbfullsite"
+                                id="chbfullsite"
+                                value="1"
+                              />
+                              <label
+                                for="chbfullsite"
+                                class="custom-control-label"
+                                >Sitio Amplio</label
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <!-- end inputs collection -->
+
+                        <!-- init Servicios Squares Selection -->
+                        <div class="form-group">
+                          <label for="mslservicio" class="col-form-label"
+                            >Servicio (<code>*</code>)
+                            <i class=" iconLabelTooltip"
+                            >i
+
+                            <div class="labelTooltip">
+                              <p>
+                                Servicio
+                              </p>
+                            </div>
+                          </i>
+                          </label>
+                          <select
+                            multiple="multiple"
+                            class="multi-select validate"
+                            required
+                            id="mslservicio"
+                            name="mslservicio[]"
+                            data-plugin="multiselect"
+                          >
+                            <option value="0">Alimentos</option>
+                            <option value="1">Bebidas</option>
+                            <option value="2">Empaques</option>
+                            <option value="3">Postres</option>
+                            <option value="4">Delicatessen</option>
+                            <option value="5">Cubiertos</option>
+                          </select>
+                          <div class="valid-feedback">Se ve bien!.</div>
+                          <div class="invalid-feedback">
+                            Algo falta o está incorrecto en Servicio.
+                          </div>
+                        </div>
+                        <!-- end Servicios Squares Selection -->
+
+                        <!-- init buttons section -->
+                        <div class="form-group button-group">
+                          <button
+                            type="submit"
+                            name="accnbtn"
+                            id="accnbtn"
+                            class="
+                              btn btn-primary
+                              waves-effect waves-light
+                              float-right
+                              mx-2
+                            "
+                          >
+                            <span class="btn-label"
+                              ><i class="fas fa-plus-circle"></i></span
+                            >Crear
+                          </button>
+                          <a href="#">
+                            <button
+                              type="button"
+                              name="regres"
+                              id="regres"
+                              class="
+                                btn btn-secondary
+                                waves-effect waves-light
+                                float-right
+                                mx-2
+                              "
+                            >
+                              <span class="btn-label"
+                                ><i class="fas fa-reply"></i></span
+                              >Volver
+                            </button>
+                          </a>
+                        </div>
+                        <!-- end buttons section -->
+                      </div>
+                      <!-- end Column Right -->
+                    </form>
+                    <!-- end Content form template -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end Row 2 -->
           </div>
         </div>
 
