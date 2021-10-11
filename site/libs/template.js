@@ -15,6 +15,7 @@ $(document).ready(function () {
   RightSideMenu()
   validationForm()
   handleDarkMode()
+  handleButtonRowSize()
 })
 
 function SlideDropdownsLeftSideInside() {
@@ -76,6 +77,16 @@ function handleDarkMode() {
       $("body").addClass("dark-mode")
     } else {
       $("body").removeClass("dark-mode")
+    }
+  })
+}
+
+function handleButtonRowSize() {
+  $("#buttonRowSize").click(function () {
+    if ($("table#table").hasClass("table-sm")) {
+      $("table#table").removeClass("table-sm")
+    } else {
+      $("table#table").addClass("table-sm")
     }
   })
 }
