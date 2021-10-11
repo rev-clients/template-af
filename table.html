@@ -35,9 +35,8 @@
 
     <link href="css/multi-select.css" rel="stylesheet" type="text/css" />
 
-    <link href="css/app.min.css" rel="stylesheet" type="text/css" />
-
     <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet" />
+    <link href="css/app.min.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body>
@@ -569,27 +568,28 @@
                         </button>
                       </div>
                       <table
+                        class="table-striped table-hover"
                         id="table"
-                        data-toolbar="#toolbar"
+                        data-click-to-select="false"
+                        data-detail-formatter="detailFormatter"
+                        data-detail-view="false"
+                        data-id-field="id"
+                        data-minimum-count-columns="2"
+                        data-page-list="[10, 25, 50, 100, all]"
+                        data-pagination="true"
+                        data-response-handler="responseHandler"
                         data-search="true"
                         data-show-refresh="false"
                         data-show-toggle="false"
                         data-show-fullscreen="false"
                         data-show-columns="true"
                         data-show-columns-toggle-all="true"
-                        data-detail-view="false"
                         data-show-export="true"
-                        data-click-to-select="false"
-                        data-detail-formatter="detailFormatter"
-                        data-minimum-count-columns="2"
                         data-show-pagination-switch="true"
-                        data-pagination="true"
-                        data-id-field="id"
-                        data-page-list="[10, 25, 50, 100, all]"
                         data-show-footer="false"
                         data-side-pagination="server"
+                        data-toolbar="#toolbar"
                         data-url="https://examples.wenzhixin.net.cn/examples/bootstrap_table/data"
-                        data-response-handler="responseHandler"
                       ></table>
                       <i class="bi-alarm"></i>
                     </div>
@@ -890,11 +890,8 @@
       function operateFormatter(value, row, index) {
         return [
           '<a class="like" href="javascript:void(0)" title="Like">',
-          '<i class="fa fa-heart"></i>',
-          "</a>  ",
-          '<a class="remove" href="javascript:void(0)" title="Remove">',
-          '<i class="fa fa-trash"></i>',
-          "</a>",
+          "Link",
+          "</a>"
         ].join("")
       }
 
@@ -905,9 +902,9 @@
         "click .remove": function (e, value, row, index) {
           $table.bootstrapTable("remove", {
             field: "id",
-            values: [row.id],
+            values: [row.id]
           })
-        },
+        }
       }
 
       function totalTextFormatter(data) {
@@ -942,39 +939,36 @@
               {
                 field: "state",
                 checkbox: true,
-                rowspan: 2,
                 align: "center",
-                valign: "middle",
+                valign: "middle"
               },
               {
                 title: "Item ID",
                 field: "id",
-                rowspan: 2,
                 align: "center",
                 valign: "middle",
                 sortable: true,
-                footerFormatter: totalTextFormatter,
+                footerFormatter: totalTextFormatter
               },
               {
                 title: "Item Detail",
-                colspan: 3,
-                align: "center",
+
+                align: "center"
               },
-            ],
-            [
+
               {
                 field: "name",
                 title: "Item Name",
                 sortable: true,
                 footerFormatter: totalNameFormatter,
-                align: "center",
+                align: "center"
               },
               {
                 field: "price",
                 title: "Item Price",
                 sortable: true,
                 align: "center",
-                footerFormatter: totalPriceFormatter,
+                footerFormatter: totalPriceFormatter
               },
               {
                 field: "operate",
@@ -982,10 +976,10 @@
                 align: "center",
                 clickToSelect: false,
                 events: window.operateEvents,
-                formatter: operateFormatter,
-              },
-            ],
-          ],
+                formatter: operateFormatter
+              }
+            ]
+          ]
         })
         $table.on(
           "check.bs.table uncheck.bs.table " +
@@ -1008,7 +1002,7 @@
           var ids = getIdSelections()
           $table.bootstrapTable("remove", {
             field: "id",
-            values: ids,
+            values: ids
           })
           $remove.prop("disabled", true)
         })

@@ -4349,3 +4349,8 @@ body {
 .pagination li.active {
   background-color: transparent !important ;
 }
+
+thead {
+  background-color: #f1556c;
+  color: var(--white);
+}
