@@ -23,7 +23,10 @@
     <link href="css/dark-mode.css" rel="stylesheet" type="text/css" />
 
     <link href="css/bootstrap-table.min.css" rel="stylesheet" type="text/css" />
-
+    <link
+      href="https://unpkg.com/bootstrap-table@1.18.3/dist/bootstrap-table.min.css"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css"
@@ -566,6 +569,9 @@
                         <button id="remove" class="btn btn-danger" disabled>
                           <i class="fa fa-trash"></i> Delete
                         </button>
+                        <button id="button" class="btn btn-secondary">
+                          <i class="fas fa-trash"></i>
+                        </button>
                       </div>
                       <table
                         class="table-striped table-hover"
@@ -860,10 +866,13 @@
     <script src="https://unpkg.com/bootstrap-table@1.18.3/dist/bootstrap-table.min.js"></script>
     <script src="https://unpkg.com/bootstrap-table@1.18.3/dist/bootstrap-table-locale-all.min.js"></script>
     <script src="https://unpkg.com/bootstrap-table@1.18.3/dist/extensions/export/bootstrap-table-export.min.js"></script>
+    <script src="https://unpkg.com/bootstrap-table@1.18.3/dist/bootstrap-table.min.js"></script>
 
     <script>
       var $table = $("#table")
       var $remove = $("#remove")
+      var $table = $("#table")
+      var $button = $("#button")
       var selections = []
 
       function getIdSelections() {
@@ -1012,6 +1021,12 @@
         initTable()
 
         $("#locale").change(initTable)
+      })
+
+      $(function () {
+        $button.click(function () {
+          $table.bootstrapTable("resetSearch")
+        })
       })
     </script>
   </body>
