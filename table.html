@@ -569,10 +569,10 @@
                         <button id="remove" class="btn btn-danger" disabled>
                           <i class="fa fa-trash"></i> Delete
                         </button>
-                        <button id="button" class="btn btn-secondary">
+                        <button id="buttonRowSize" class="btn btn-secondary">
                           <i class="fas fa-table"></i>
                         </button>
-                        <button id="buttonRowSize" class="btn btn-secondary">
+                        <button id="button" class="btn btn-secondary">
                           <i class="fas fa-trash"></i>
                         </button>
                       </div>
@@ -1032,9 +1032,9 @@
           $table.bootstrapTable("resetSearch")
         })
       })
+
       $(function () {
-        $button.click(function () {
-          console.log("Funciona")
+        $buttonRowSize.click(function () {
           $table.toggleClass("table-sm")
         })
       })
