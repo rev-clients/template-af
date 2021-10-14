@@ -3675,7 +3675,6 @@ table[data-toggle="table"] {
   background: var(--white);
 }
 .tablesaw-enhanced .tablesaw-bar .btn:active,
-.tablesaw-enhanced .tablesaw-bar .btn:focus,
 .tablesaw-enhanced .tablesaw-bar .btn:hover {
   color: var(--red) !important;
   background-color: var(--light);
@@ -4169,7 +4168,7 @@ body {
 .btn-label {
   padding: 0.8rem 0.9rem;
 }
-.btn:focus,
+
 .btn-large:focus,
 .btn-small:focus,
 .btn-floating:focus {
@@ -4353,4 +4352,9 @@ body {
 thead {
   background-color: #f1556c;
   color: var(--white);
+}
+
+[type="checkbox"] + span:not(.lever):before,
+[type="checkbox"]:not(.filled-in) + span:not(.lever):after {
+  border: 2px solid var(--gray-dark);
 }
