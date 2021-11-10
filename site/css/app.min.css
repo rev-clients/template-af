@@ -4358,3 +4358,8 @@ thead {
 [type="checkbox"]:not(.filled-in) + span:not(.lever):after {
   border: 2px solid var(--gray-dark);
 }
+
+.modal {
+  background-color: transparent;
+  max-height: 100%;
+}
