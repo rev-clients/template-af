@@ -988,11 +988,13 @@
 
                         <!-- init inputs collection -->
                         <div class="form-group">
-                          <div class="input-field">
-                            <label for="fldmaincolor" class="col-form-label"
+                          <!-- init  2 Columns inputs -->
+                          <div class="form-group form-row doble-input two-column">
+                            <div class="input-field col-5">
+                              <label for="fldmaincolor" class="col-form-label"
                               >1º Color (<code>*</code>)</label
-                            >
-                            <input
+                              >
+                              <input
                               type="text"
                               data-length="6"
                               class="validate"
@@ -1000,28 +1002,132 @@
                               name="fldmaincolor"
                               id="fldmaincolor"
                               value=""
-                            />
-                            <i class="material-icons prefix iconInput"
+                              />
+                              <i class="material-icons prefix iconInput"
                               >i
                               <div class="inputTooltip">1º Color</div>
                             </i>
                             <span
-                              class="helper-text"
-                              data-error="Algo falta o está incorrecto en 1º Color."
-                              data-success="Se ve bien!"
+                            class="helper-text"
+                            data-error="Algo falta o está incorrecto en 1º Color."
+                            data-success="Se ve bien!"
                             ></span>
                           </div>
-                          <div class="input-field">
-                            <label for="fldseccolor" class="col-form-label"
-                              >2º Color (<code>*</code>)</label
+                          <div class="input-field col-5">
+                            <label for="fldmaincolor" class="col-form-label"
+                            >1º Color (<code>*</code>)</label
                             >
                             <input
-                              type="text"
-                              data-length="6"
-                              class="validate"
-                              required
-                              name="fldseccolor"
-                              id="fldseccolor"
+                            type="text"
+                            data-length="6"
+                            class="validate"
+                            required
+                            name="fldmaincolor"
+                            id="fldmaincolor"
+                            value=""
+                            />
+                            <i class="material-icons prefix iconInput"
+                            >i
+                            <div class="inputTooltip">1º Color</div>
+                          </i>
+                          <span
+                          class="helper-text"
+                          data-error="Algo falta o está incorrecto en 1º Color."
+                          data-success="Se ve bien!"
+                          ></span>
+                        </div>
+                      </div>
+                      <!-- end 2 Columns inputs -->
+                      <!-- init 2 Columns input and switch -->
+                      <div class="form-group form-row doble-input two-column">
+                        <div class="input-field col-5">
+                          <label for="fldmaincolor" class="col-form-label"
+                          >1º Color (<code>*</code>)</label
+                          >
+                          <input
+                          type="text"
+                          data-length="6"
+                          class="validate"
+                          required
+                          name="fldmaincolor"
+                          id="fldmaincolor"
+                          value=""
+                          />
+                          <i class="material-icons prefix iconInput"
+                          >i
+                          <div class="inputTooltip">1º Color</div>
+                        </i>
+                        <span
+                        class="helper-text"
+                        data-error="Algo falta o está incorrecto en 1º Color."
+                        data-success="Se ve bien!"
+                        ></span>
+                      </div>
+                      <div class="col-5">                           
+                        <label class="col-form-label ">
+                          <br />Estado (<code>*</code>)
+                          <i class=" iconLabelTooltip">i
+                            <div class="labelTooltip">
+                              <p>
+                                Estado
+                              </p>
+                            </div>
+                          </i>
+                          </label>
+                            <div class="custom-control custom-switch">
+                              <input
+                                type="checkbox"
+                                class="custom-control-input validate"
+                                name="chbestatus"
+                                id="chbestatus"
+                                checked="checked"
+                                value="1"
+                              />
+                              <label
+                                for="chbestatus"
+                                class="custom-control-label"
+                              >
+                              Activo                                  
+                              </label>
+                            </div>
+                          </div>
+                      </div>
+                      <!-- end 2 Columns input and switch -->
+                      
+                      <div class="input-field">
+                        <label for="fldmaincolor" class="col-form-label"
+                        >1º Color (<code>*</code>)</label
+                        >
+                        <input
+                        type="text"
+                        data-length="6"
+                        class="validate"
+                        required
+                        name="fldmaincolor"
+                        id="fldmaincolor"
+                        value=""
+                        />
+                        <i class="material-icons prefix iconInput"
+                        >i
+                        <div class="inputTooltip">1º Color</div>
+                      </i>
+                      <span
+                      class="helper-text"
+                      data-error="Algo falta o está incorrecto en 1º Color."
+                      data-success="Se ve bien!"
+                      ></span>
+                    </div>
+                    <div class="input-field">
+                      <label for="fldseccolor" class="col-form-label"
+                      >2º Color (<code>*</code>)</label
+                      >
+                      <input
+                      type="text"
+                      data-length="6"
+                      class="validate"
+                      required
+                      name="fldseccolor"
+                      id="fldseccolor"
                               value=""
                             />
                             <i class="material-icons prefix iconInput"

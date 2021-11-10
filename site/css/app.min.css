@@ -4363,3 +4363,7 @@ thead {
   background-color: transparent;
   max-height: 100%;
 }
+
+.doble-input {
+  justify-content: space-between;
+}
