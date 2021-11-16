@@ -4383,3 +4383,7 @@ thead {
   background-color: var(--red);
   border-color: var(--red);
 }
+
+.selected .active {
+  background-color: var(--red);
+}
