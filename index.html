@@ -578,6 +578,25 @@
 
                         <!--  Init input Radio -->
 
+                        <label
+                            for="dspcliente"
+                            class="col-form-label d-block select-input-cliente"
+                            >
+                            Radio Default
+                            <i class=" iconLabelTooltip"
+                            >i
+
+                            <div class="labelTooltip">
+                              <p>
+                                Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit. Voluptatem placeat ipsum,
+                                error dolorem deserunt doloribus quidem sunt.
+                              </p>
+                            </div>
+                          </i>
+                          </label>
+
+
                         <div class="form-check">
                           <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                           <label class="form-check-label" for="flexRadioDefault1">
@@ -605,10 +624,101 @@
 
                         <!--  End input Radio -->
 
+
+                        <!-- init btn modal -->
+                        
+                          <!-- Button trigger modal -->
+                          <button type="button" class="mt-3 mb-3 btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Launch demo modal
+                          </button>
+
+                          <!-- Modal -->
+                          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum illo, placeat autem aspernatur ullam sed iure vero quasi consequuntur tempore hic porro aut mollitia odio dolore architecto et quia impedit.
+                                  Commodi, mollitia! Possimus dolor voluptatibus unde doloribus, reprehenderit officia consequuntur odit ullam reiciendis quaerat deserunt? Officia voluptas nihil, atque in deserunt facilis ut ipsam beatae aperiam fugiat, voluptatibus magnam sunt!
+                                  Minus, est pariatur, laborum ipsam sequi similique neque alias corrupti eum delectus consectetur in sed! Corporis atque illo repellendus, pariatur odit, doloremque vel inventore beatae sed harum, aut saepe doloribus?
+                                  Pariatur incidunt consequuntur nobis ipsum eos iste esse neque, debitis ad fuga provident, assumenda explicabo ea modi excepturi tenetur, doloribus quam deserunt eligendi. Culpa fuga nisi fugit a temporibus perspiciatis.
+                                  Molestias tenetur ab possimus maiores esse odit exercitationem, fuga totam culpa magni accusantium itaque modi nemo corporis quisquam corrupti facere error maxime. Doloremque dignissimos, blanditiis pariatur unde minus perspiciatis iusto.
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      <!-- end btn modal -->
+
+                        <!--  Init input Radio line -->
+                        
+                        <label
+                          for="dspcliente"
+                          class="col-form-label d-block select-input-cliente"
+                          >
+                          Radio inline
+                          <i class=" iconLabelTooltip"
+                            >i
+
+                            <div class="labelTooltip">
+                              <p>
+                                Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit. Voluptatem placeat ipsum,
+                                error dolorem deserunt doloribus quidem sunt.
+                              </p>
+                            </div>
+                          </i>
+                        </label>
+                    
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault11">
+                          <label class="form-check-label" for="flexRadioDefault11">
+                            Default radio
+                          </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault12" checked>
+                          <label class="form-check-label" for="flexRadioDefault12">
+                             radio
+                          </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault13" checked>
+                          <label class="form-check-label" for="flexRadioDefault13">
+                              radio
+                          </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault14" checked>
+                          <label class="form-check-label" for="flexRadioDefault14">
+                             radio
+                          </label>
+                        </div>
+                      
+                        <!--  End input Radio line -->
+
+
                         <!-- init data picker -->
                         <div class="form-group input-field">
                           <label for="datapicker" class="col-form-label d-block"
-                            >Data</label
+                            >Data
+                            <i class=" iconLabelTooltip"
+                            >i
+
+                            <div class="labelTooltip">
+                              <p>
+                                Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit. Voluptatem placeat ipsum,
+                                error dolorem deserunt doloribus quidem sunt.
+                              </p>
+                            </div>
+                          </i></label
                           >
                           <input
                             type="date"
@@ -872,13 +982,16 @@
                               data-success=""
                             ></span>
                           </div>
-                          <div class="col-12">
-                            <div class="col-12">
-                              
-                            </div>
-                          </div>
+                          
                         </div>
                         <!-- end inputs collection -->
+
+                        <!-- init text area -->
+                        <div class="mb-3">
+                          <label for="formControlTextarea1" class="form-label col-form-label">Example textarea</label>
+                          <textarea class="form-control" id="formControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <!-- end text area -->
 
                         <!-- init inforamtion section -->
                         <div class="form-group">
@@ -890,45 +1003,9 @@
                           /><br /><br />
                           (<code>*</code>) Campos necesarios
                         </div>
-                        <!-- end inforamtion section -->
+                        <!-- end inforamtion section -->                   
 
-                        <div class="mb-3">
-                          <label for="formControlTextarea1" class="form-label">Example textarea</label>
-                          <textarea class="form-control" id="formControlTextarea1" rows="3"></textarea>
-                        </div>
-
-                                                <!-- init btn modal -->
-                        
-                          <!-- Button trigger modal -->
-                          <button type="button" class="mt-5 btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            Launch demo modal
-                          </button>
-
-                          <!-- Modal -->
-                          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum illo, placeat autem aspernatur ullam sed iure vero quasi consequuntur tempore hic porro aut mollitia odio dolore architecto et quia impedit.
-                                  Commodi, mollitia! Possimus dolor voluptatibus unde doloribus, reprehenderit officia consequuntur odit ullam reiciendis quaerat deserunt? Officia voluptas nihil, atque in deserunt facilis ut ipsam beatae aperiam fugiat, voluptatibus magnam sunt!
-                                  Minus, est pariatur, laborum ipsam sequi similique neque alias corrupti eum delectus consectetur in sed! Corporis atque illo repellendus, pariatur odit, doloremque vel inventore beatae sed harum, aut saepe doloribus?
-                                  Pariatur incidunt consequuntur nobis ipsum eos iste esse neque, debitis ad fuga provident, assumenda explicabo ea modi excepturi tenetur, doloribus quam deserunt eligendi. Culpa fuga nisi fugit a temporibus perspiciatis.
-                                  Molestias tenetur ab possimus maiores esse odit exercitationem, fuga totam culpa magni accusantium itaque modi nemo corporis quisquam corrupti facere error maxime. Doloremque dignissimos, blanditiis pariatur unde minus perspiciatis iusto.
-                                </div>
-                                <div class="modal-footer">
-                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                  <button type="button" class="btn btn-primary">Save changes</button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                      <!-- end btn modal -->
-
-
+                      
                       </div>
 
                       
@@ -1144,8 +1221,8 @@
                               <input
                                 type="checkbox"
                                 class="custom-control-input validate"
-                                name="chbestatus"
-                                id="chbestatus2"
+                                name="chbestatus1"
+                                id="chbestatus1"
                                 checked="checked"
                                 value="1"
                               />
