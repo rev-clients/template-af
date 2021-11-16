@@ -4373,3 +4373,13 @@ thead {
   opacity: 1;
   pointer-events: auto;
 }
+
+.form-check-inline > label {
+  position: relative;
+  top: -4px;
+}
+
+.form-check-input:checked {
+  background-color: var(--red);
+  border-color: var(--red);
+}
