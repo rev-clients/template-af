@@ -4358,3 +4358,35 @@ thead {
 [type="checkbox"]:not(.filled-in) + span:not(.lever):after {
   border: 2px solid var(--gray-dark);
 }
+<<<<<<< Updated upstream
+=======
+
+.modal {
+  background-color: transparent;
+  max-height: 100%;
+}
+
+.doble-input {
+  justify-content: space-between;
+}
+
+[type="radio"]:not(:checked),
+[type="radio"]:checked {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.form-check-inline > label {
+  position: relative;
+  top: -4px;
+}
+
+.form-check-input:checked {
+  background-color: var(--red);
+  border-color: var(--red);
+}
+
+.m-sw {
+  margin: 10px 0;
+}
+>>>>>>> Stashed changes
