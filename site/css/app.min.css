@@ -4384,6 +4384,11 @@ thead {
   border-color: var(--red);
 }
 
+.m-sw {
+  margin: 10px 0;
+}
+
 .selected .active {
   background-color: var(--red);
 }
+
