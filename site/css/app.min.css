@@ -4119,10 +4119,6 @@ i {
   background: var(--gray-dark);
 }
 
-.btn {
-  line-height: 0;
-}
-
 body {
   font-size: 0.95rem;
 }
@@ -4163,10 +4159,6 @@ body {
 
 .select-input-seguridad {
   padding-bottom: 15px;
-}
-
-.btn-label {
-  padding: 0.8rem 0.9rem;
 }
 
 .btn-large:focus,
@@ -4392,3 +4384,23 @@ thead {
   background-color: var(--red);
 }
 
+.bootstrap-maxlength {
+  background-color: var(--blue);
+  padding: 3px 7px 6px 7px;
+  line-height: 1;
+  border-radius: 3px;
+}
+
+.bootstrap-maxlength {
+  padding: 3px 7px 6px 7px;
+  line-height: 1;
+  border-radius: 3px;
+}
+
+.label-success {
+  background-color: var(--green);
+}
+
+.label-danger {
+  background-color: var(--red);
+}

@@ -1,0 +1,1452 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <base href="./site/" target="_top" />
+    <meta content="Xinaptia" name="author" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Xinaptia - en Progreso: Xistema</title>
+    <link rel="shortcut icon" href="images/favicon.png" />
+
+   
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/dark-mode.css" rel="stylesheet" type="text/css" />
+
+    <link href="css/bootstrap-table.min.css" rel="stylesheet" type="text/css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css"
+    />
+
+    <link href="css/icons.css" rel="stylesheet" type="text/css" />
+
+    <link href="css/jquery.toast.min.css" rel="stylesheet" type="text/css" />
+
+    <link href="css/multi-select.css" rel="stylesheet" type="text/css" />
+
+    <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
+
+
+    <link href="css/app.min.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <div class="navbar-custom">
+        <ul class="list-unstyled topnav-menu float-right mb-0">
+          <li class="dropdown notification-list">
+            <a
+              class="nav-link dropdown-toggle waves-effect waves-light"
+              data-toggle="dropdown"
+              href="javascript:void(0);"
+              role="button"
+              aria-haspopup="false"
+              aria-expanded="false"
+            >
+              <i class="fe-bell noti-icon"></i>
+              <i class="badge badge-danger rounded-circle noti-icon-badge">6</i>
+            </a>
+            <div
+              class="
+                dropdown-menu dropdown-menu-right dropdown-lg
+                no-transform-translate
+              "
+            >
+              <!-- Inicio Desplegable Mensajes-->
+              <div class="dropdown-item noti-title">
+                <h5 class="m-0">
+                  <span class="float-right">
+                    <a href="" class="text-dark">
+                      <small>Limpiar todos</small>
+                    </a> </span
+                  >Notificaciones
+                </h5>
+              </div>
+
+              <div class="slimscroll noti-scroll">
+                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                  <div class="notify-icon">
+                    <img
+                      src="images/users/user-1.jpg"
+                      class="img-fluid rounded-circle"
+                      alt="Albert Einstein"
+                    />
+                  </div>
+                  <p class="notify-details">Albert Einstein</p>
+                  <p class="text-muted mb-0 user-msg">
+                    <small>Locura es esperar resultados diferentes.</small>
+                    <small class="text-muted">publicado 23.05.21 14:05</small>
+                  </p>
+                </a>
+                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                  <div class="notify-icon">
+                    <img
+                      src="images/users/user-2.jpg"
+                      class="img-fluid rounded-circle"
+                      alt="Isaac Newton"
+                    />
+                  </div>
+                  <p class="notify-details">Isaac Newton</p>
+                  <p class="text-muted mb-0 user-msg">
+                    <small>Locura es esperar resultados diferentes.</small>
+                    <small class="text-muted">publicado 22.05.21 09:05</small>
+                  </p>
+                </a>
+                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                  <div class="notify-icon">
+                    <img
+                      src="images/users/user-3.jpg"
+                      class="img-fluid rounded-circle"
+                      alt="Nikola Tesla"
+                    />
+                  </div>
+                  <p class="notify-details">Nikola Tesla</p>
+                  <p class="text-muted mb-0 user-msg">
+                    <small>Locura es esperar resultados diferentes.</small>
+                    <small class="text-muted">publicado 20.05.21 20:05</small>
+                  </p>
+                </a>
+                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                  <div class="notify-icon">
+                    <img
+                      src="images/users/user-4.jpg"
+                      class="img-fluid rounded-circle"
+                      alt="Micchio Kaku"
+                    />
+                  </div>
+                  <p class="notify-details">Micchio Kaku</p>
+                  <p class="text-muted mb-0 user-msg">
+                    <small>Locura es esperar resultados diferentes.</small>
+                    <small class="text-muted">publicado 12.05.21 08:25</small>
+                  </p>
+                </a>
+                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                  <div class="notify-icon">
+                    <img
+                      src="images/users/user-5.jpg"
+                      class="img-fluid rounded-circle"
+                      alt="Stephen Hawking"
+                    />
+                  </div>
+                  <p class="notify-details">Stephen Hawking</p>
+                  <p class="text-muted mb-0 user-msg">
+                    <small>Locura es esperar resultados diferentes.</small>
+                    <small class="text-muted">publicado 10.05.21 22:25</small>
+                  </p>
+                </a>
+                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                  <div class="notify-icon">
+                    <img
+                      src="images/users/user-6.jpg"
+                      class="img-fluid rounded-circle"
+                      alt="Galileo Galilei"
+                    />
+                  </div>
+                  <p class="notify-details">Galileo Galilei</p>
+                  <p class="text-muted mb-0 user-msg">
+                    <small>Locura es esperar resultados diferentes.</small>
+                    <small class="text-muted">publicado 07.05.21 10:13</small>
+                  </p>
+                </a>
+              </div>
+              <a
+                href="javascript:void(0);"
+                class="
+                  dropdown-item
+                  text-center text-primary
+                  notify-item notify-all
+                "
+              >
+                Ver Todos
+                <i class="fi-arrow-right"></i>
+              </a>
+            </div>
+          </li>
+          <!-- Fin Desplegable Mensajes-->
+
+          <!-- Inicio Ajustes del Usuario -->
+          <li class="dropdown notification-list">
+            <a
+              class="
+                nav-link
+                dropdown-toggle
+                nav-user
+                mr-0
+                waves-effect waves-light
+              "
+              data-toggle="dropdown"
+              href="javascript:void(0);"
+              role="button"
+              aria-haspopup="false"
+              aria-expanded="false"
+            >
+              <img
+                src="images/users/user-0.jpg"
+                alt="user-image"
+                class="rounded-circle"
+              />
+              <span class="pro-user-name ml-1"> Giordano Bruno </span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right profile-dropdown">
+              <div class="dropdown-header noti-title">
+                <h6 class="text-overflow m-0">¡ Hola !</h6>
+              </div>
+              <a href="javascript:void(0);" class="dropdown-item notify-item">
+                <i class="fe-user"></i>
+                <span>Mis Datos</span>
+              </a>
+              <a href="javascript:void(0);" class="dropdown-item notify-item">
+                <i class="fe-settings"></i>
+                <span>Settings</span>
+              </a>
+              <a href="javascript:void(0);" class="dropdown-item notify-item">
+                <i class="fe-lock"></i>
+                <span>Bloquear</span>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a
+                href="javascript:void(0);"
+                class="dropdown-item notify-item sabot"
+                data-some="index.htm"
+                data-val="rvire"
+              >
+                <i class="fe-tag"></i>
+                <span>Volveré</span>
+              </a>
+              <a
+                href="javascript:void(0);"
+                class="dropdown-item notify-item sabot"
+                data-some="index.htm"
+                data-val="lgut"
+              >
+                <i class="fe-log-out"></i>
+                <span>Salir</span>
+              </a>
+            </div>
+          </li>
+          <!-- Fin Ajustes del Usuario -->
+
+          <li class="dropdown notification-list">
+            <a
+              href="javascript:void(0);"
+              class="nav-link right-bar-toggle waves-effect waves-light"
+            >
+              <i class="fe-settings noti-icon"></i>
+            </a>
+          </li>
+        </ul>
+
+        <div class="logo-box">
+          <a
+            href="javascript:void(0);"
+            class="logo text-center sabot"
+            data-some="eslobby"
+          >
+            <span class="logo-lg">
+              <img
+                src="images/logo-light.png"
+                alt="alfanegocios.com.ar/xinap"
+                height="30"
+              />
+            </span>
+            <span class="logo-sm">
+              <img
+                src="images/logo-sm.png"
+                alt="alfanegocios.com.ar/xinap"
+                height="24"
+              />
+            </span>
+          </a>
+        </div>
+
+        <ul class="list-unstyled topnav-menu topnav-menu-left m-0">
+          <li>
+            <button
+              class="button-menu-mobile waves-effect waves-light"
+              id="button-menu-mobile"
+            >
+              <i class="fe-menu"></i>
+            </button>
+          </li>
+
+          <!-- Inicio Agregador Superior -->
+          <li class="dropdown d-none d-lg-block">
+            <a
+              class="nav-link dropdown-toggle waves-effect waves-light"
+              data-toggle="dropdown"
+              href="javascript:void(0);"
+              role="button"
+              aria-haspopup="false"
+              aria-expanded="false"
+            >
+              Agregar
+            </a>
+            <div class="dropdown-menu">
+              <a href="#" class="dropdown-item">
+                <i class="fas fa-grip-vertical mr-1"></i>
+                <span> Campo </span>
+              </a>
+              <a href="#" class="dropdown-item">
+                <i class="fas fa-fingerprint mr-1"></i>
+                <span> Característica </span>
+              </a>
+              <a href="#" class="dropdown-item">
+                <i class="fas fa-map mr-1"></i>
+                <span> Local </span>
+              </a>
+              <a href="#" class="dropdown-item">
+                <i class="fas fa-map-marked-alt mr-1"></i>
+                <span> Término </span>
+              </a>
+              <a href="#" class="dropdown-item">
+                <i class="fas fa-plane-departure mr-1"></i>
+                <span> PreFlight </span>
+              </a>
+              <a href="#" class="dropdown-item">
+                <i class="fas fa-handshake mr-1"></i>
+                <span> Productor </span>
+              </a>
+              <a href="#" class="dropdown-item">
+                <i class="fas fa-user-circle mr-1"></i>
+                <span> Cliente </span>
+              </a>
+              <a href="#" class="dropdown-item">
+                <i class="fas fa-clipboard-list mr-1"></i>
+                <span> Servicio </span>
+              </a>
+              <a href="#" class="dropdown-item">
+                <i class="fas fa-hashtag mr-1"></i>
+                <span> Tipos </span>
+              </a>
+              <a href="#" class="dropdown-item">
+                <i class="fas fa-magic mr-1"></i>
+                <span> Traducción </span>
+              </a>
+              <a href="#" class="dropdown-item">
+                <i class="fas fa-box-open mr-1"></i>
+                <span> Xistema </span>
+              </a>
+
+              <div class="dropdown-divider"></div>
+
+              <a
+                href="javascript:void(0);"
+                class="dropdown-item sabot"
+                data-some="some"
+              >
+                <i class="fe-headphones mr-1"></i>
+                <span>Ayuda & Soporte</span>
+              </a>
+            </div>
+          </li>
+          <!-- Fin Agregador Superior -->
+        </ul>
+      </div>
+
+      <!-- Inicio Menu Colapsable-->
+      <div class="left-side-menu">
+        <div class="slimscroll-menu">
+          <div id="sidebar-menu">
+            <ul class="metismenu" id="side-menu">
+              <li>
+                <a href="../table.html">
+                  <i class="fas fa-hashtag"></i>
+                  <span> Tabla </span>
+                </a>
+              </li>
+              <li>
+                <a href="../column.html">
+                  <i class="fas fa-hashtag"></i>
+                  <span> Form 1 column </span>
+                </a>
+              </li>
+              <li>
+                <a href="javascript: void(0);">
+                  <i class="fas fa-grip-vertical"></i>
+                  <span> Campo </span>
+                  <span class="menu-arrow"></span>
+                </a>
+                <ul class="nav-second-level" aria-expanded="false">
+                  <li>
+                    <a href="es4f24r">Listar</a>
+                  </li>
+                  <li>
+                    <a href="es4f24i">Agregar</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="javascript: void(0);">
+                  <i class="fas fa-fingerprint"></i>
+                  <span> Característica </span>
+                  <span class="menu-arrow"></span>
+                </a>
+                <ul class="nav-second-level" aria-expanded="false">
+                  <li>
+                    <a href="es4e1Fn">Listar</a>
+                  </li>
+                  <li>
+                    <a href="es4e1Fe">Agregar</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="javascript: void(0);">
+                  <i class="fas fa-map"></i>
+                  <span> Local </span>
+                  <span class="menu-arrow"></span>
+                </a>
+                <ul class="nav-second-level" aria-expanded="false">
+                  <li>
+                    <a href="es2j56n">Listar</a>
+                  </li>
+                  <li>
+                    <a href="es2j56j">...con Término</a>
+                  </li>
+                  <li>
+                    <a href="es2j56e">Agregar</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="javascript: void(0);">
+                  <i class="fas fa-plane-departure"></i>
+                  <span> PreFlight </span>
+                  <span class="menu-arrow"></span>
+                </a>
+                <ul class="nav-second-level" aria-expanded="false">
+                  <li>
+                    <a href="es5h55o">Listar</a>
+                  </li>
+                  <li>
+                    <a href="es5h55d">Agregar</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="javascript: void(0);">
+                  <i class="fas fa-handshake"></i>
+                  <span> Productor </span>
+                  <span class="menu-arrow"></span>
+                </a>
+                <ul class="nav-second-level" aria-expanded="false">
+                  <li>
+                    <a href="es4a14r">Listar</a>
+                  </li>
+                  <li>
+                    <a href="es4a14g">...con Cliente</a>
+                  </li>
+                  <li>
+                    <a href="es4a14i">Agregar</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="javascript: void(0);">
+                  <i class="fas fa-clipboard-list"></i>
+                  <span> Servicio </span>
+                  <span class="menu-arrow"></span>
+                </a>
+                <ul class="nav-second-level" aria-expanded="false">
+                  <li>
+                    <a href="es2d34r">Listar</a>
+                  </li>
+                  <li>
+                    <a href="es2d34i">Agregar</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="javascript: void(0);">
+                  <i class="fas fa-hashtag"></i>
+                  <span> Tipos </span>
+                  <span class="menu-arrow"></span>
+                </a>
+                <ul class="nav-second-level" aria-expanded="false">
+                  <li>
+                    <a href="es3g22o">Listar</a>
+                  </li>
+                  <li>
+                    <a href="es3g22d">Agregar</a>
+                  </li>
+                </ul>
+              </li>
+              
+              <li>
+                <a href="javascript: void(0);">
+                  <i class="fas fa-magic"></i>
+                  <span> Traducción </span>
+                  <span class="menu-arrow"></span>
+                </a>
+                <ul class="nav-second-level" aria-expanded="false">
+                  <li>
+                    <a href="es3i31o">Listar</a>
+                  </li>
+                  <li>
+                    <a href="es3i31d">Agregar</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="javascript: void(0);">
+                  <i class="fas fa-box-open"></i>
+                  <span> Xistema </span>
+                  <span class="menu-arrow"></span>
+                </a>
+                <ul class="nav-second-level" aria-expanded="false">
+                  <li>
+                    <a href="es5c44n">Listar</a>
+                  </li>
+                  <li>
+                    <a href="es5c44e">Agregar</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+      <!-- Fin Menú Colapsable-->
+
+      <!-- Init Content Page -->
+      <div class="content-page">
+        <div class="content">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12">
+                <div class="page-title-box">
+                  <div class="page-title-right">
+                    <ol class="breadcrumb m-0">
+                      <li class="breadcrumb-item">
+                        <a href="javascript: void(0);">Xinaptia</a>
+                      </li>
+                      <li class="breadcrumb-item">
+                        <a href="javascript: void(0);">Xistema</a>
+                      </li>
+                      <li class="breadcrumb-item">
+                        <a href="javascript: void(0);">Nuevo</a>
+                      </li>
+                    </ol>
+                  </div>
+                  <h4 class="page-title">Nuevo Xistema</h4>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="card text-white bg-danger">
+                  <div class="card-body">
+                    <h5 class="card-title text-white">
+                      Se encontraron estos errores.
+                    </h5>
+                    <p class="card-text">
+                      La suma de los catetos no es igual a la hipotenusa
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- init Form content -->
+            <div class="row">
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-body">
+                    <!--  -->
+                    <form class="row needs-validation form-row two-column" novalidate>
+                      <div class="col-11">
+
+                        <!-- Init Input email -->
+                        <div class="mb-13" >
+                          <label 
+                            for="exampleFormControlInput1" 
+                            class="col-form-label d-block select-input-cliente"
+                            >
+                              Email address
+                              <i class=" iconLabelTooltip">
+                                i
+                                <div class="labelTooltip">
+                                  <p>
+                                    Email address.
+                                  </p>
+                                </div>
+                              </i>
+                          </label>
+                          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                          <div class="invalid-feedback">Ingresar valor correcto.</div>
+                            <div class="valid-feedback">Looks good!</div>
+                        </div>
+                          <!-- End Input email -->
+
+                        <!-- Init Input file -->
+                        <div>
+                          <label 
+                          for="exampleFormControlInput1" 
+                          class="col-form-label d-block select-input-cliente"
+                          >
+                            Subir archivo
+                            <i class=" iconLabelTooltip">
+                              i
+                              <div class="labelTooltip">
+                                <p>
+                                  Subir archivo.
+                                </p>
+                              </div>
+                            </i>
+                          </label>
+                          <input type="file" class="form-control" id="inputGroupFile01" required>
+                          <div class="invalid-feedback">Ingresar valor correcto.</div>
+                            <div class="valid-feedback">Looks good!</div>
+                        </div>
+                        <!-- End Input file -->
+
+                        <!-- Init input textarea -->
+                        <div class=" " >
+                            <label for="exampleFormControlTextarea1" 
+                            class="col-form-label d-block select-input-cliente">
+                              Textarea
+                              <i class=" iconLabelTooltip">
+                                i
+                                <div class="labelTooltip">
+                                  <p>
+                                    Textarea.
+                                  </p>
+                                </div>
+                              </i>
+                            </label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" maxlength="20" rows="1" required></textarea>
+                            <div class="invalid-feedback">Ingresar valor correcto.</div>
+                            <div class="valid-feedback">Looks good!</div>
+                        </div>
+                        <!-- End input textarea -->
+
+                        
+
+                        <!-- init data picker -->
+                        <div class=" input-field">
+                          <label for="datapicker" class="col-form-label d-block"
+                            >Data
+                            <i class=" iconLabelTooltip"
+                            >i
+
+                            <div class="labelTooltip">
+                              <p>
+                                Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit. Voluptatem placeat ipsum,
+                                error dolorem deserunt doloribus quidem sunt.
+                              </p>
+                            </div>
+                          </i></label
+                          >
+                          <input
+                            type="date"
+                            id="datepicker"
+                            name="datepicker"
+                            class="form-control datapicker"
+                            data-length="50"
+                          />
+                        </div>
+                        <!-- end data picker -->
+
+                        <!-- init Select -->
+                        <div class="">
+                          <label
+                            for="dspcliente"
+                            class="col-form-label d-block select-input-cliente"
+                            >Cliente
+                            <i class=" iconLabelTooltip"
+                            >i
+
+                            <div class="labelTooltip">
+                              <p>
+                                Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit. Voluptatem placeat ipsum,
+                                error dolorem deserunt doloribus quidem sunt.
+                              </p>
+                            </div>
+                          </i>
+                            </label>
+                          <select
+                            class="form-select"
+                            data-live-search="true"
+                            data-style="btn-light"
+                            name="dspcliente"
+                            id="dspcliente"
+                            tabindex="-98"
+                            aria-label="Default select example"
+                          >
+                            <option value="">Seleccione..</option>
+                            <option value="0">Alberto</option>
+                            <option value="1">Mónica</option>
+                            <option value="2">Ricardo</option>
+                            <option value="3">Irma</option>
+                            <option value="4">Alexis</option>
+                          </select>
+                        </div>
+                        <!-- end Select -->
+                        <div class="">
+                          <div class="form-outline">
+                            <label for="validationTooltip01" class="form-label col-form-label">First name
+                              <i class=" iconLabelTooltip">i
+                                <div class="labelTooltip">
+                                  <p>
+                                    Sitio amplio
+                                  </p>
+                                </div>
+                              </i>
+                            </label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="validationTooltip01"
+                              value="Mark"
+                              required
+                            />
+                            <div class="invalid-feedback">Ingresar valor correcto.</div>
+                            <div class="valid-feedback">Looks good!</div>
+                          </div>
+                        </div>
+                        <div class="">
+                          <div class="form-outline">
+                            <label for="validationTooltip02" class="form-label col-form-label">Last name
+                              <i class=" iconLabelTooltip">i
+                                <div class="labelTooltip">
+                                  <p>
+                                    Sitio amplio
+                                  </p>
+                                </div>
+                              </i>
+                            </label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="validationTooltip02"
+                              value="Otto"
+                              required
+                            />
+                            <div class="invalid-feedback">Ingresar valor correcto.</div>
+                            <div class="valid-feedback">Looks good!</div>
+                          </div>
+                        </div>
+                        <div class=" ">
+                          <label for="validationTooltipUsername" class="form-label col-form-label">Username
+                            <i class=" iconLabelTooltip">i
+                              <div class="labelTooltip">
+                                <p>
+                                  User name.
+                                </p>
+                              </div>
+                            </i>
+                          </label>
+                          <div class="input-group form-outline">
+                            <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="validationTooltipUsername"
+                              aria-describedby="validationTooltipUsernamePrepend"
+                              required
+                            />
+                            <div class="invalid-feedback">Ingresar valor correcto.</div>
+                            <div class="valid-feedback">Looks good!</div>
+                          </div>
+                        </div>
+                        <div class="">
+                          <div class="form-outline">
+                            <label for="validationTooltip03" class="form-label col-form-label">City
+                              <i class=" iconLabelTooltip">i
+                                <div class="labelTooltip">
+                                  <p>
+                                    city.
+                                  </p>
+                                </div>
+                              </i>
+                            </label>
+                            <input type="text" class="form-control" id="validationTooltip03" required />
+                            <div class="invalid-feedback">Ingresar valor correcto.</div>
+                            <div class="valid-feedback">Looks good!</div>
+                          </div>
+                        </div>
+                        <div class="">
+                          <div class="form-outline">
+                            <label for="validationTooltip05" class="form-label col-form-label">City
+                              <i class=" iconLabelTooltip">i
+                                <div class="labelTooltip">
+                                  <p>
+                                    city.
+                                  </p>
+                                </div>
+                              </i>
+                            </label>
+                            <input type="text" class="form-control" id="validationTooltip05" required />
+                            <div class="invalid-feedback">Ingresar valor correcto.</div>
+                            <div class="valid-feedback">Looks good!</div>
+                          </div>
+                        </div>
+
+                        <!--  Init input Radio -->
+                        <div class="">
+                          <label
+                        for="dspcliente"
+                        class="col-form-label d-block select-input-cliente"
+                        >
+                        Radio 
+                        <i class=" iconLabelTooltip"
+                        >i
+
+                        <div class="labelTooltip">
+                          <p>
+                            Radio.
+                          </p>
+                        </div>
+                      </i>
+                          </label>
+
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              radio
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                              radio
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
+                            <label class="form-check-label" for="flexRadioDefault3">
+                              radio
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4" checked>
+                            <label class="form-check-label" for="flexRadioDefault4">
+                              radio
+                            </label>
+                          </div>
+
+                        </div>
+                        <!--  End input Radio -->
+
+                        <!--  Init input Radio line -->
+                        <div class="">                        
+                          <label
+                          for="dspcliente"
+                          class="col-form-label d-block select-input-cliente"
+                          >
+                            Radio inline
+                            <i class=" iconLabelTooltip">
+                              i
+                              <div class="labelTooltip">
+                                <p>
+                                  Radio inline.
+                                </p>
+                              </div>
+                            </i>
+                          </label>
+                  
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault11">
+                            <label class="form-check-label" for="flexRadioDefault11">
+                              radio
+                            </label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault12" checked>
+                            <label class="form-check-label" for="flexRadioDefault12">
+                              radio
+                            </label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault13" checked>
+                            <label class="form-check-label" for="flexRadioDefault13">
+                                radio
+                            </label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault14" checked>
+                            <label class="form-check-label" for="flexRadioDefault14">
+                              radio
+                            </label>
+                          </div>
+                          
+                        </div>
+                        <!--  End input Radio line -->
+
+                      </div>
+                      <div class="col-11">
+                        <!-- Init two input -->
+                      <div class=" row form-group form-row doble-input two-column mb-2">
+                        <div class="input-field col-6 ">
+                          <label for="fldmaincolor2" class="col-form-label"
+                          >input 1 (<code>*</code>) 
+                            <i class=" iconLabelTooltip">
+                              i
+                              <div class="labelTooltip">
+                                <p>
+                                  Input 1.
+                                </p>
+                              </div>
+                            </i> 
+                          </label
+                          >
+                          <input
+                          type="text"
+                          data-length="6"
+                          maxlength="8"
+                          class="form-control"
+                          required
+                          name="fldmaincolor2"
+                          id="fldmaincolor2"
+                          value=""
+                          />
+                          
+                          <div class="invalid-feedback">Ingresar valor correcto.</div>
+                            <div class="valid-feedback">Looks good!</div>
+                        </div>
+                        <div class="input-field col-6 ">
+                        <label for="fldmaincolor2" class="col-form-label"
+                        >input 2 (<code>*</code>)
+                          <i class=" iconLabelTooltip">
+                            i
+                            <div class="labelTooltip">
+                              <p>
+                                Input 2.
+                              </p>
+                            </div>
+                          </i>
+                        </label
+                        >
+                        <input
+                        type="text"
+                        data-length="6"
+                        class="form-control"
+                        required
+                        name="fldmaincolor2"
+                        id="fldmaincolor2"
+                        value=""
+                        />
+                        
+                        <div class="invalid-feedback">Ingresar valor correcto.</div>
+                        <div class="valid-feedback">Looks good!</div>
+                        </div>
+                      </div>
+                      <!-- end two input -->
+
+                      <!-- Init input radio  -->
+                      <div>
+                        <label for="" class="col-form-label">Radio
+                          <i class=" iconLabelTooltip">i
+                            <div class="labelTooltip">
+                              <p>
+                                Radio.
+                              </p>
+                            </div>
+                          </i>
+                        </label>
+                        <div class="form-check row">                        
+                          <input
+                          type="radio"
+                          class="form-check-input"
+                          id="validationFormCheck3"
+                          name="radio-stacked"
+                          required
+                          />
+                          <label class="form-check-label" for="validationFormCheck3"
+                          >radio</label
+                          >
+                          <input
+                          type="radio"
+                          class="form-check-input"
+                          id="validationFormCheck1"
+                          name="radio-stacked"
+                          required
+                          />
+                          <label class="form-check-label" for="validationFormCheck1"
+                          >radio</label
+                          >
+                          <input
+                          type="radio"
+                          class="form-check-input"
+                          id="validationFormCheck2"
+                          name="radio-stacked"
+                          required
+                          />
+                          <label class="form-check-label" for="validationFormCheck2"
+                          >radio</label
+                          >
+                          <div class="invalid-feedback">Ingresar valor correcto.</div>
+                          <div class="valid-feedback">Looks good!</div>
+                        </div>
+                      </div>
+                      <!-- End input radio  -->
+                      
+                      <!-- Init Switch -->
+                      <div>
+                        <label class="col-form-label">
+                          <br />Sitio Amplio (<code>*</code>)
+                          <i class=" iconLabelTooltip">i
+                            <div class="labelTooltip">
+                              <p>
+                                Sitio amplio
+                              </p>
+                            </div>
+                          </i>
+                        </label>
+                        <div class="custom-control custom-switch">
+                          <input
+                            type="checkbox"
+                            class="custom-control-input"
+                            name="chbfullsite"
+                            id="sw1"
+                            value="1"
+                          />
+                          <label
+                            for="sw1"
+                            class="custom-control-label"
+                          >
+                            Sitio Amplio
+                          </label>
+                        </div>  
+                      </div>             
+                      <!-- end Switch -->
+
+                      <!-- end two line Switch -->                        
+                      <div class="form-group form-row doble-input two-column">                        
+                        <!-- Init Switch -->
+                      <div class="col-6">
+                        <label class="col-form-label">
+                          <br />Sitio Amplio (<code>*</code>)
+                          <i class=" iconLabelTooltip">i
+                            <div class="labelTooltip">
+                              <p>
+                                Sitio amplio
+                              </p>
+                            </div>
+                          </i>
+                        </label>
+                        <div class="custom-control custom-switch">
+                          <input
+                            type="checkbox"
+                            class="custom-control-input"
+                            name="chbfullsite"
+                            id="chbfullsite"
+                            value="1"
+                          />
+                          <label
+                            for="chbfullsite"
+                            class="custom-control-label"
+                          >
+                            Sitio Amplio
+                          </label>
+                        </div>  
+                      </div>             
+                      <!-- end Switch -->
+                      <!-- Init Switch -->
+                      <div class="col-6">
+                        <label class="col-form-label">
+                          <br />Sitio Amplio (<code>*</code>)
+                          <i class=" iconLabelTooltip">i
+                            <div class="labelTooltip">
+                              <p>
+                                Sitio amplio
+                              </p>
+                            </div>
+                          </i>
+                        </label>
+                        <div class="custom-control custom-switch">
+                          <input
+                            type="checkbox"
+                            class="custom-control-input"
+                            name="chbfullsite"
+                            id="chbfullsite"
+                            value="1"
+                          />
+                          <label
+                            for="chbfullsite"
+                            class="custom-control-label"
+                          >
+                            Sitio Amplio
+                          </label>
+                        </div>  
+                      </div>             
+                      <!-- end Switch -->
+                      </div>
+                      <!-- end two line Switch -->
+
+                      <!-- init Servicios Squares Selection -->
+                      <div class="">
+                        <label for="mslservicio" class="col-form-label"
+                          >Servicio (<code>*</code>)
+                          <i class=" iconLabelTooltip"
+                          >i
+
+                          <div class="labelTooltip">
+                            <p>
+                              Servicio
+                            </p>
+                          </div>
+                        </i>
+                        </label>
+                        <select
+                          multiple="multiple"
+                          class="multi-select validate"
+                          required
+                          id="mslservicio"
+                          name="mslservicio"
+                          data-plugin="multiselect"
+                        >
+                          <option value="0">Alimentos</option>
+                          <option value="1">Bebidas</option>
+                          <option value="2">Empaques</option>
+                          <option value="3">Postres</option>
+                          <option value="4">Delicatessen</option>
+                          <option value="5">Cubiertos</option>
+                        </select>
+                        <div class="valid-feedback">Se ve bien!.</div>
+                        <div class="invalid-feedback">
+                          Seleccione un servicio.
+                        </div>
+                      </div>
+                      <!-- end Servicios Squares Selection -->
+
+                      <!-- init buttons section -->
+                      <div class="form-group button-group">
+                        <!-- Submit button -->
+                          <button
+                          type="submit"
+                          name="accnbtn"
+                          id="accnbtn"
+                          class="
+                          btn btn-primary
+                          waves-effect waves-light
+                          float-right
+                          mx-2
+
+                          "
+                          onclick="resultado()"
+                          >
+                            <span class="btn-label">
+                              <i class="fas fa-plus-circle"></i>
+                            </span>
+                            Crear
+                          </button>
+                        <!-- Submit button -->
+                        
+                          <a href="#">
+                            <button
+                              type="button"
+                              name="regres"
+                              id="regres"
+                              class="
+                                btn btn-secondary
+                                waves-effect waves-light
+                                float-right
+                                mx-2
+                              "
+                            >
+                              <span class="btn-label">
+                                <i class="fas fa-reply"></i>
+                              </span>
+                              Volver
+                            </button>
+                          </a>
+                      </div>
+                      <!-- end buttons section -->
+                      </div>                                            
+                    </form>
+                    <!--  -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end Form content -->
+          </div>
+        </div>
+
+        <footer class="footer">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-6">
+                2021 &copy; Xinaptia por
+                <a href="https://xinaptia.com" target="_blank">Xinaptia</a>
+              </div>
+              <div class="col-md-6">
+                <div class="text-md-right footer-links d-none d-sm-block">
+                  <a href="https://xinaptia.com">Quienes Somos</a>
+                  <a href="javascript:void(0);" class="sabot" data-some="some"
+                    >Ayuda & Soporte</a
+                  >
+                  <a href="javascript:void(0);" target="_blank">Contacto</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+      <!-- Fin Content Page -->
+
+      <!-- Inicio Ajustes de la Página -->
+      <div class="right-bar">
+        <div class="rightbar-title">
+          <a href="javascript:void(0);" class="right-bar-toggle float-right">
+            <i class="dripicons-cross noti-icon"></i>
+          </a>
+          <h5 class="m-0 text-white">Ajustes</h5>
+        </div>
+
+        <div class="slimscroll-menu">
+          <div class="user-box">
+            <div class="user-img">
+              <img
+                src="images/users/user-0.jpg"
+                alt="user-img"
+                title="Mat Helme"
+                class="rounded-circle img-fluid"
+              />
+              <a href="javascript:void(0);" class="user-edit"
+                ><i class="mdi mdi-pencil"></i
+              ></a>
+            </div>
+            <h5><a href="javascript: void(0);">Giordano Bruno</a></h5>
+            <p class="text-muted mb-0"><small>Consultor General</small></p>
+          </div>
+
+          <hr class="mt-0" />
+          <h5 class="pl-3">Ajustes Básicos</h5>
+          <hr class="mb-0" />
+
+          <div class="p-3">
+            <div class="checkbox checkbox-primary mb-2 checkbox-right-side-menu">
+              <input
+                id="checkset2"
+                class="sabot"
+                data-some="some"
+                data-val="l"
+                type="checkbox"
+              />
+              <label for="checkset2">Recordar cambios de hoy</label>
+            </div>
+            <div class="custom-switch custom-control m-sw">
+              <input
+                type="checkbox"
+                class="custom-control-input validate"
+                name="chbfixedaddt"
+                id="chbfixedaddt"
+                
+              />
+              <label
+                for="chbfixedaddt"
+                class="custom-control-label"
+                >Dark theme</label
+              >
+            </div>
+          </div>
+          </div>
+
+          <hr class="mt-0" />
+          <h5 class="pl-3 pr-3">
+            Mensajes
+            <i class="float-right badge badge-pill badge-danger">6</i>
+          </h5>
+          <hr class="mb-0" />
+
+          <!-- Inicio Desplegable de Mensajes (de la Página) -->
+          <div class="p-3">
+            <div class="inbox-widget">
+              <div class="inbox-item">
+                <div class="inbox-item-img">
+                  <img
+                    src="images/users/user-1.jpg"
+                    class="rounded-circle"
+                    alt="Albert Einstein"
+                  />
+                </div>
+                <p class="inbox-item-author">
+                  <a href="javascript: void(0);" class="text-dark"
+                    >Albert Einstein</a
+                  >
+                </p>
+                <p class="inbox-item-text">
+                  Locura es esperar resultados diferentes.
+                </p>
+              </div>
+
+              <div class="inbox-item">
+                <div class="inbox-item-img">
+                  <img
+                    src="images/users/user-2.jpg"
+                    class="rounded-circle"
+                    alt="Isaac Newton"
+                  />
+                </div>
+                <p class="inbox-item-author">
+                  <a href="javascript: void(0);" class="text-dark"
+                    >Isaac Newton</a
+                  >
+                </p>
+                <p class="inbox-item-text">
+                  Locura es esperar resultados diferentes.
+                </p>
+              </div>
+
+              <div class="inbox-item">
+                <div class="inbox-item-img">
+                  <img
+                    src="images/users/user-3.jpg"
+                    class="rounded-circle"
+                    alt="Nikola Tesla"
+                  />
+                </div>
+                <p class="inbox-item-author">
+                  <a href="javascript: void(0);" class="text-dark"
+                    >Nikola Tesla</a
+                  >
+                </p>
+                <p class="inbox-item-text">
+                  Locura es esperar resultados diferentes.
+                </p>
+              </div>
+
+              <div class="inbox-item">
+                <div class="inbox-item-img">
+                  <img
+                    src="images/users/user-4.jpg"
+                    class="rounded-circle"
+                    alt="Micchio Kaku"
+                  />
+                </div>
+                <p class="inbox-item-author">
+                  <a href="javascript: void(0);" class="text-dark"
+                    >Micchio Kaku</a
+                  >
+                </p>
+                <p class="inbox-item-text">
+                  Locura es esperar resultados diferentes.
+                </p>
+              </div>
+
+              <div class="inbox-item">
+                <div class="inbox-item-img">
+                  <img
+                    src="images/users/user-5.jpg"
+                    class="rounded-circle"
+                    alt="Stephen Hawking"
+                  />
+                </div>
+                <p class="inbox-item-author">
+                  <a href="javascript: void(0);" class="text-dark"
+                    >Stephen Hawking</a
+                  >
+                </p>
+                <p class="inbox-item-text">
+                  Locura es esperar resultados diferentes.
+                </p>
+              </div>
+
+              <div class="inbox-item">
+                <div class="inbox-item-img">
+                  <img
+                    src="images/users/user-6.jpg"
+                    class="rounded-circle"
+                    alt="Galileo Galilei"
+                  />
+                </div>
+                <p class="inbox-item-author">
+                  <a href="javascript: void(0);" class="text-dark"
+                    >Galileo Galilei</a
+                  >
+                </p>
+                <p class="inbox-item-text">
+                  Locura es esperar resultados diferentes.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Fin Desplegable de Mensajes (de la Página)-->
+        </div>
+      </div>
+      <!-- Fin Ajustes de la Página -->
+
+      <div class="rightbar-overlay"></div>
+    </div>
+    <div id="scripts">
+      <!-- Jquery -->
+      <!-- <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"
+      ></script> -->
+
+      <!-- TODO: remplazar vendor -->
+      <!-- <script src="libs/vendor.min.js"></script> -->
+
+      <!-- TODO: remplazar app -->
+      <!-- <script src="libs/app.min.js"></script> -->
+
+      <!-- TODO: http://loudev.com/ -->
+
+      <!-- Jquery CDN-->
+      <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"
+      ></script>
+
+      <script src="libs/jquery.multi-select.js"></script>
+
+      <script src="libs/jquery.autocomplete.min.js"></script>
+
+      <!-- <script src="libs/bootstrap-select.min.js"></script> -->
+
+      <script src="libs/bootstrap-maxlength.min.js"></script>
+
+      <script src="libs/form-advanced.init.es.js"></script>
+
+      <script src="libs/flatpickr.es.min.js"></script>
+
+      <script src="libs/form-pickers.init.js"></script>
+
+      <script src="libs/jquery.toast.min.js"></script>
+
+      <script src="libs/toastr.init.js"></script>
+
+      <!-- Jquery datapicker -->
+      <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+      <!-- Nuestra libreria -->
+      <script src="libs/template.js"></script>
+
+      <!-- Select with Boostrap  -->
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js?SameSite=None"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"
+        SameSite="None"
+      ></script>
+
+       <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js?SameSite=None"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"
+        SameSite="None"
+      ></script> 
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </div>
+  </body>
+</html>
