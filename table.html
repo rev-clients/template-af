@@ -11,11 +11,6 @@
 
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-    />
-
-    <link
-      rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
     />
 
@@ -861,8 +856,6 @@
       ></script>
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
-
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     </div>
 
     <script src="https://unpkg.com/tableexport.jquery.plugin/tableExport.min.js"></script>
@@ -872,74 +865,74 @@
     <script src="https://unpkg.com/bootstrap-table@1.18.3/dist/bootstrap-table.min.js"></script>
 
     <script>
-      var $table = $("#table")
-      var $remove = $("#remove")
-      var $table = $("#table")
-      var $button = $("#button")
-      var $buttonRowSize = $("#buttonRowSize")
-      var selections = []
+      var $table = $("#table");
+      var $remove = $("#remove");
+      var $table = $("#table");
+      var $button = $("#button");
+      var $buttonRowSize = $("#buttonRowSize");
+      var selections = [];
 
       function getIdSelections() {
         return $.map($table.bootstrapTable("getSelections"), function (row) {
-          return row.id
-        })
+          return row.id;
+        });
       }
 
       function responseHandler(res) {
         $.each(res.rows, function (i, row) {
-          row.state = $.inArray(row.id, selections) !== -1
-        })
-        return res
+          row.state = $.inArray(row.id, selections) !== -1;
+        });
+        return res;
       }
 
       function detailFormatter(index, row) {
-        var html = []
+        var html = [];
         $.each(row, function (key, value) {
-          html.push("<p><b>" + key + ":</b> " + value + "</p>")
-        })
-        return html.join("")
+          html.push("<p><b>" + key + ":</b> " + value + "</p>");
+        });
+        return html.join("");
       }
 
       function operateFormatter(value, row, index) {
         return [
           '<a class="like" href="javascript:void(0)" title="Like">',
           "Link",
-          "</a>"
-        ].join("")
+          "</a>",
+        ].join("");
       }
 
       window.operateEvents = {
         "click .like": function (e, value, row, index) {
-          alert("You click like action, row: " + JSON.stringify(row))
+          alert("You click like action, row: " + JSON.stringify(row));
         },
         "click .remove": function (e, value, row, index) {
           $table.bootstrapTable("remove", {
             field: "id",
-            values: [row.id]
-          })
-        }
-      }
+            values: [row.id],
+          });
+        },
+      };
 
       function totalTextFormatter(data) {
-        return "Total"
+        return "Total";
       }
 
       function totalNameFormatter(data) {
-        return data.length
+        return data.length;
       }
 
       function totalPriceFormatter(data) {
-        var field = this.field
+        var field = this.field;
         return (
           "$" +
           data
             .map(function (row) {
-              return +row[field].substring(1)
+              return +row[field].substring(1);
             })
             .reduce(function (sum, i) {
-              return sum + i
+              return sum + i;
             }, 0)
-        )
+        );
       }
 
       function initTable() {
@@ -953,7 +946,7 @@
                 field: "state",
                 checkbox: true,
                 align: "center",
-                valign: "middle"
+                valign: "middle",
               },
               {
                 title: "Item ID",
@@ -961,12 +954,12 @@
                 align: "center",
                 valign: "middle",
                 sortable: true,
-                footerFormatter: totalTextFormatter
+                footerFormatter: totalTextFormatter,
               },
               {
                 title: "Item Detail",
 
-                align: "center"
+                align: "center",
               },
 
               {
@@ -974,14 +967,14 @@
                 title: "Item Name",
                 sortable: true,
                 footerFormatter: totalNameFormatter,
-                align: "center"
+                align: "center",
               },
               {
                 field: "price",
                 title: "Item Price",
                 sortable: true,
                 align: "center",
-                footerFormatter: totalPriceFormatter
+                footerFormatter: totalPriceFormatter,
               },
               {
                 field: "operate",
@@ -989,11 +982,11 @@
                 align: "center",
                 clickToSelect: false,
                 events: window.operateEvents,
-                formatter: operateFormatter
-              }
-            ]
-          ]
-        })
+                formatter: operateFormatter,
+              },
+            ],
+          ],
+        });
         $table.on(
           "check.bs.table uncheck.bs.table " +
             "check-all.bs.table uncheck-all.bs.table",
@@ -1001,43 +994,43 @@
             $remove.prop(
               "disabled",
               !$table.bootstrapTable("getSelections").length
-            )
+            );
 
             // save your data, here just save the current page
-            selections = getIdSelections()
+            selections = getIdSelections();
             // push or splice the selections if you want to save all data selections
           }
-        )
+        );
         $table.on("all.bs.table", function (e, name, args) {
-          console.log(name, args)
-        })
+          console.log(name, args);
+        });
         $remove.click(function () {
-          var ids = getIdSelections()
+          var ids = getIdSelections();
           $table.bootstrapTable("remove", {
             field: "id",
-            values: ids
-          })
-          $remove.prop("disabled", true)
-        })
+            values: ids,
+          });
+          $remove.prop("disabled", true);
+        });
       }
 
       $(function () {
-        initTable()
+        initTable();
 
-        $("#locale").change(initTable)
-      })
+        $("#locale").change(initTable);
+      });
 
       $(function () {
         $button.click(function () {
-          $table.bootstrapTable("resetSearch")
-        })
-      })
+          $table.bootstrapTable("resetSearch");
+        });
+      });
 
       $(function () {
         $buttonRowSize.click(function () {
-          $table.toggleClass("table-sm")
-        })
-      })
+          $table.toggleClass("table-sm");
+        });
+      });
     </script>
   </body>
 </html>
