@@ -24,19 +24,22 @@
 .dark-mode .user-img > a > i,
 .dark-mode .card-body,
 .dark-mode .ms-container .ms-selection li.ms-elem-selection,
-.dark-mode input,
 .dark-mode .badge-danger,
 .dark-mode .badge,
 .dark-mode .fe-bell,
 .dark-mode .dropdown-toggle::after,
 .dark-mode a,
 .dark-mode h4,
-table {
+table,
+.dark-mode .dropdown-menu,
+.dark-mode label {
   color: var(--gray-dark) !important;
 }
 
 .dark-mode .ms-list,
-.dark-mode .footer {
+.dark-mode .footer,
+.dark-mode .card,
+.dark-mode .dropdown-menu {
   background-color: var(--white);
 }
 
@@ -59,7 +62,8 @@ table {
 .dark-mode .dropdown-item:active,
 .dark-mode .btn-light:not(:disabled):not(.disabled).active,
 .dark-mode .btn-light:not(:disabled):not(.disabled):active,
-.dark-mode .show > .btn-light.dropdown-toggle {
+.dark-mode .show > .btn-light.dropdown-toggle,
+.dark-mode input {
   background-color: var(--secondary);
   color: white;
 }

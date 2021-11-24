@@ -4404,3 +4404,7 @@ thead {
 .label-danger {
   background-color: var(--red);
 }
+
+a {
+  text-decoration: none;
+}
