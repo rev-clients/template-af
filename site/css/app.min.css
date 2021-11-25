@@ -4200,11 +4200,6 @@ body {
   cursor: pointer;
 }
 
-.checkbox-right-side-menu > label {
-  margin-left: 21px;
-  line-height: 2;
-}
-
 .input-field .prefix.active {
   color: var(--dark);
 }
@@ -4411,4 +4406,8 @@ a {
 
 select > option:hover {
   background-color: var(--red);
+}
+
+.modal {
+  z-index: 10000;
 }
