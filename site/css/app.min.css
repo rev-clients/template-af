@@ -4408,3 +4408,7 @@ thead {
 a {
   text-decoration: none;
 }
+
+select > option:hover {
+  background-color: var(--red);
+}

@@ -63,7 +63,9 @@ table,
 .dark-mode .btn-light:not(:disabled):not(.disabled).active,
 .dark-mode .btn-light:not(:disabled):not(.disabled):active,
 .dark-mode .show > .btn-light.dropdown-toggle,
-.dark-mode input {
+.dark-mode input,
+.dark-mode textarea,
+.dark-mode select {
   background-color: var(--secondary);
   color: white;
 }
