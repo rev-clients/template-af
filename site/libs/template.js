@@ -15,6 +15,7 @@ $(document).ready(function () {
   handleDarkMode();
   maxLength();
   validationForm();
+  modals();
 });
 
 function SlideDropdownsLeftSideInside() {
@@ -95,8 +96,13 @@ function validationForm() {
 }
 
 function maxLength() {
-  console.log(" it is working?");
   $("input[maxlength], textarea[maxlength]").maxlength({
     alwaysShow: true,
+  });
+}
+
+function modals() {
+  $("#userModal .btn-save").click(function () {
+    $("#userModal").modal("hide");
   });
 }
