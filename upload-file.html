@@ -40,6 +40,13 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" crossorigin="anonymous" />
     <!-- Crop -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.css" integrity="sha512-0SPWAwpC/17yYyZ/4HSllgaK7/gg9OlVozq8K7rf3J8LvCjYEEIfzzpnA2/SSjpGIunCSD18r3UhvDcu/xncWA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--  -->
+    <link
+      rel="stylesheet"
+      href="css/jquery.plupload.queue.css"
+      type="text/css"
+      media="screen"
+    />
   </head>
 
   <body>
@@ -601,6 +608,14 @@
       
 
                     </form>
+
+                    <!-- init Uploader -->
+                    <form method="post" action="dump.php">
+                      <div id="uploader">
+                        <p>Your browser doesn't have Flash, Silverlight or HTML5 support.</p>
+                      </div>
+                      <input type="submit" value="Send" />
+                    </form>
                     <!--  -->
                   </div>
                 </div>
@@ -1062,6 +1077,8 @@
       </div>
 
 
+
+
     </div>
 <!-- end btn modal -->
 
@@ -1122,6 +1139,18 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js" integrity="sha512-ooSWpxJsiXe6t4+PPjCgYmVfr1NS5QXJACcR/FPpsdm6kqG1FmQ2SVyg2RXeVuCRBLr0lWHnWJP6Zs1Efvxzww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
       <!-- Crop - local -->
       <script src="libs/crop.js"></script>
+
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+
+      <!-- plupload -->
+      <script type="text/javascript" src="libs/plupload.full.min.js"></script>
+      <script
+        type="text/javascript"
+        src="libs/jquery.plupload.queue.js"
+      ></script>
+
+      <script type="text/javascript"  src="libs/plupload.js"></script>
+
     </div>
   </body>
 </html>
