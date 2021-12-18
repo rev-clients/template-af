@@ -41,8 +41,12 @@
     <!-- Crop -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.css" integrity="sha512-0SPWAwpC/17yYyZ/4HSllgaK7/gg9OlVozq8K7rf3J8LvCjYEEIfzzpnA2/SSjpGIunCSD18r3UhvDcu/xncWA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--  -->
-    <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/themes/base/jquery-ui.css" type="text/css" />
-    <link rel="stylesheet" href="css/jquery.ui.plupload.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="css/jquery.plupload.queue.css"
+      type="text/css"
+      media="screen"
+    />
   </head>
 
   <body>
@@ -600,12 +604,11 @@
                     </form>
 
                     <!-- init Uploader -->
-                    <form id="form" method="post" action="../dump.php">
+                    <form method="post" action="dump.php">
                       <div id="uploader">
                         <p>Your browser doesn't have Flash, Silverlight or HTML5 support.</p>
                       </div>
-                      <br />
-                      <input type="submit" value="Submit" />
+                      <input type="submit" value="Send" />
                     </form>
                     <!--  -->
                   </div>
@@ -1133,10 +1136,15 @@
 
       <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
 
+      <!-- plupload -->
       <script type="text/javascript" src="libs/plupload.full.min.js"></script>
-      <script type="text/javascript" src="libs/jquery.ui.plupload.min.js"></script>
+      <script
+        type="text/javascript"
+        src="libs/jquery.plupload.queue.js"
+      ></script>
 
       <script type="text/javascript"  src="libs/plupload.js"></script>
+
     </div>
   </body>
 </html>
